@@ -1,0 +1,9 @@
+requests~=2.31.0
+numpy~=1.26.4
+streamlit~=1.40.1
+google-generativeai~=0.8.3
+pandas~=2.2.3
+matplotlib~=3.9.2
+yfinance~=0.2.49
+schedule~=1.2.0
+plotly~=5.9.0

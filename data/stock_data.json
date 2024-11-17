@@ -1,0 +1,145 @@
+{
+    "timestamp": "2024-11-17 08:47:25",
+    "data": {
+        "gainers": [
+            {
+                "symbol": "DIS",
+                "company_name": "The Walt Disney Company",
+                "current_price": 115.08000183105469,
+                "percent_change": 5.4618758563579135
+            },
+            {
+                "symbol": "VZ",
+                "company_name": "Verizon Communications Inc.",
+                "current_price": 41.650001525878906,
+                "percent_change": 1.9084967320261437
+            },
+            {
+                "symbol": "TRV",
+                "company_name": "The Travelers Companies, Inc.",
+                "current_price": 260.82000732421875,
+                "percent_change": 1.6762897609190581
+            },
+            {
+                "symbol": "BA",
+                "company_name": "Boeing Company",
+                "current_price": 140.19000244140625,
+                "percent_change": 1.4840039531022542
+            },
+            {
+                "symbol": "PG",
+                "company_name": "The Procter & Gamble Company",
+                "current_price": 169.5399932861328,
+                "percent_change": 1.4723434451273112
+            }
+        ],
+        "losers": [
+            {
+                "symbol": "AMGN",
+                "company_name": "Amgen Inc.",
+                "current_price": 283.6099853515625,
+                "percent_change": -4.163149268116416
+            },
+            {
+                "symbol": "WBA",
+                "company_name": "Walgreens Boots Alliance, Inc.",
+                "current_price": 8.479999542236328,
+                "percent_change": -3.745753253831611
+            },
+            {
+                "symbol": "MSFT",
+                "company_name": "Microsoft Corporation",
+                "current_price": 415.0,
+                "percent_change": -2.785264175886017
+            },
+            {
+                "symbol": "INTC",
+                "company_name": "Intel Corporation",
+                "current_price": 24.350000381469727,
+                "percent_change": -2.716741056817422
+            },
+            {
+                "symbol": "MRK",
+                "company_name": "Merck & Co., Inc.",
+                "current_price": 96.30999755859375,
+                "percent_change": -2.0841836509119203
+            }
+        ],
+        "volatility": {
+            "vix_level": 16.139999389648438
+        },
+        "greed_index": {
+            "value": "90",
+            "value_classification": "Extreme Greed",
+            "timestamp": "1731801600",
+            "time_until_update": "74553"
+        },
+        "news": [
+            {
+                "source": {
+                    "id": null,
+                    "name": "Forbes"
+                },
+                "author": "Tom Spiggle, Senior Contributor, \n Tom Spiggle, Senior Contributor\n https://www.forbes.com/sites/tomspiggle/",
+                "title": "AMD Cuts 4% Of Workforce In Push Toward AI Dominance: What This Means For Workers And The Tech Industry",
+                "description": "With the gaming hardware market shrinking, AMD is reallocating resources to where it sees future potential.",
+                "url": "https://www.forbes.com/sites/tomspiggle/2024/11/15/amd-cuts-4-of-workforce-in-push-toward-ai-dominance-what-this-means-for-workers-and-the-tech-industry/",
+                "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6737df87ff8db3c8373163dc/0x0.jpg?format=jpg&crop=1984,1488,x0,y972,safe&height=900&width=1600&fit=bounds",
+                "publishedAt": "2024-11-16T00:02:36Z",
+                "content": "FILE - In this Oct. 14, 2009 file photo, an Advance Micro Devices (AMD) logo is shown on a computer ... [+] at Best Buy in Mountain View, Calif. AMD reports fourth-quarter financial results after the\u2026 [+6920 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Forbes"
+                },
+                "author": "Michael Goldstein, Contributor, \n Michael Goldstein, Contributor\n https://www.forbes.com/sites/michaelgoldstein/",
+                "title": "Airline Post-Election Optimism Tempered By Boeing Woes",
+                "description": "Airlines have been celebrating since Donald Trump's election, but optimism over less regulation is tempered by Boeing's continuing delivery problems.",
+                "url": "https://www.forbes.com/sites/michaelgoldstein/2024/11/15/airline-post-election-optimism-hindered-by-boeing-woes/",
+                "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/67380007d526bcfa995af069/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+                "publishedAt": "2024-11-16T02:43:58Z",
+                "content": "A Southwest Airlines Boeing 737 MAX is pushed back from the gate at San Diego International Airport ... [+] en route to Denver on August 24, 2024. (Photo by Kevin Carter/Getty Images)\r\nGetty Images\r\n\u2026 [+8002 chars]"
+            },
+            {
+                "source": {
+                    "id": "cbs-news",
+                    "name": "CBS News"
+                },
+                "author": "Carter Evans",
+                "title": "Why Trump's tariff proposals have some business owners worried",
+                "description": "President-elect Donald Trump campaigned on implementing a blanket tariff of 10% to 20% on all imports, along with an additional 60% or more on goods from China.",
+                "url": "https://www.cbsnews.com/news/trump-tariff-proposals-business-owners-worried-about-impact/",
+                "urlToImage": "https://assets1.cbsnewsstatic.com/hub/i/r/2024/11/16/92063e75-40b9-477b-bc13-2f5e5a719dfe/thumbnail/1200x630/7ed1db974075c2ef2366fee8d8d6c1f3/1731718378244.png?v=cc5700e8049ccc64c4e0272313675898",
+                "publishedAt": "2024-11-16T01:03:04Z",
+                "content": "Los Angeles\u00a0\u2014 Bobby Djavaheri is trying to stock up his warehouse with appliances from overseas, while he can still afford it.\r\n\"We've been preparing for the last six months \u2014 both our factories and \u2026 [+2638 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "WPIX 11 New York"
+                },
+                "author": "James Ford",
+                "title": "After Whoopi Goldberg criticizes NYC bakery, customers pour in",
+                "description": "GREAT KILLS, Staten Island (PIX11) \u2014 Whoopi Goldberg claimed that a historic bakery on Staten Island wouldn\u2019t fill a dessert request that she\u2019d made because ...",
+                "url": "https://pix11.com/news/local-news/staten-island/after-whoopi-goldberg-criticizes-nyc-bakery-customers-pour-in/",
+                "urlToImage": "https://media.zenfs.com/en/wpix_new_york_city_ny_articles_672/72ffa1394423fb9b4e40197e4190865a",
+                "publishedAt": "2024-11-16T00:12:54Z",
+                "content": "GREAT KILLS, Staten Island (PIX11) Whoopi Goldberg claimed that a historic bakery on Staten Island wouldnt fill a dessert request that shed made because the business didnt like her politics.\r\nThe own\u2026 [+4368 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Dealcatcher.com"
+                },
+                "author": null,
+                "title": "Amazon - Cordless Heated Knee Brace Wrap $25.29",
+                "description": "Huge Savings! Stack both discounts to get this Cordless Heated Knee Brace Wrap for $25.29.<br /><br /><strong>More Ways to Save at Amazon:</strong><ul><li>Don't already have Amazon Prime? <a rel=\"nofollow\" href=\"https://amzn.to/3S9yS1w\" target=\"_blank\">Regist\u2026",
+                "url": "https://www.dealcatcher.com/deals/health-beauty/medicine/cordless-heated-knee-brace-wrap-998326702",
+                "urlToImage": "https://www.dealcatcher.com/__og-image__/image/deals/health-beauty/medicine/cordless-heated-knee-brace-wrap-998326702/og.png",
+                "publishedAt": "2024-11-16T01:26:35Z",
+                "content": "Stock up on medicine &amp; first aid supplies from Target, Walmart, Amazon &amp; more. Find deals on everything you need for your medicine cabinet."
+            }
+        ]
+    }
+}

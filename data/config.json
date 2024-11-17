@@ -1,0 +1,52 @@
+{
+    "NEWSAPI_KEY": "YOUR API KEY",
+    "gemini api key":"YOUR API KEY",
+    "urls": {
+        "crypto_data": "https://api.coingecko.com/api/v3/coins/markets",
+        "crypto_gainers_losers": "https://api.coingecko.com/api/v3/coins/markets",
+        "greed_index_stocks": "https://api.alternative.me/fng/?market=stocks",
+        "greed_index_crypto": "https://api.alternative.me/fng/?market=crypto",
+        "crypto_volatility": "https://api.crypto-volatility.com/endpoint",
+        "news_data": "https://newsapi.org/v2/everything"
+    },
+    "US30": [
+      { "ticker": "AAPL", "name": "Apple Inc." },
+      { "ticker": "MSFT", "name": "Microsoft Corporation" },
+      { "ticker": "AMGN", "name": "Amgen Inc." },
+      { "ticker": "AXP", "name": "American Express Company" },
+      { "ticker": "BA", "name": "Boeing Company" },
+      { "ticker": "CAT", "name": "Caterpillar Inc." },
+      { "ticker": "CRM", "name": "Salesforce, Inc." },
+      { "ticker": "CSCO", "name": "Cisco Systems, Inc." },
+      { "ticker": "CVX", "name": "Chevron Corporation" },
+      { "ticker": "DIS", "name": "The Walt Disney Company" },
+      { "ticker": "DOW", "name": "Dow Inc." },
+      { "ticker": "GS", "name": "Goldman Sachs Group, Inc." },
+      { "ticker": "HD", "name": "The Home Depot, Inc." },
+      { "ticker": "HON", "name": "Honeywell International Inc." },
+      { "ticker": "IBM", "name": "International Business Machines Corporation" },
+      { "ticker": "INTC", "name": "Intel Corporation" },
+      { "ticker": "JNJ", "name": "Johnson & Johnson" },
+      { "ticker": "JPM", "name": "JPMorgan Chase & Co." },
+      { "ticker": "KO", "name": "The Coca-Cola Company" },
+      { "ticker": "MCD", "name": "McDonald's Corporation" },
+      { "ticker": "MMM", "name": "3M Company" },
+      { "ticker": "MRK", "name": "Merck & Co., Inc." },
+      { "ticker": "NKE", "name": "Nike, Inc." },
+      { "ticker": "PG", "name": "The Procter & Gamble Company" },
+      { "ticker": "TRV", "name": "The Travelers Companies, Inc." },
+      { "ticker": "UNH", "name": "UnitedHealth Group Incorporated" },
+      { "ticker": "VZ", "name": "Verizon Communications Inc." },
+      { "ticker": "WBA", "name": "Walgreens Boots Alliance, Inc." },
+      { "ticker": "WMT", "name": "Walmart Inc." },
+      { "ticker": "XOM", "name": "Exxon Mobil Corporation" }
+    ],
+
+    "stock_keywords" : ["stock market", "NYSE", "NASDAQ", "S&P 500", "US30"],
+    "crypto_keywords" : ["cryptocurrency", "bitcoin", "ethereum", "crypto market", "blockchain"]
+}
+
+
+    
+  
+  
