@@ -120,7 +120,7 @@ def create_speedometer(value, title, max_value):
             "valueformat": "",  # This ensures no decimal places
             "prefix": "",
             "suffix": "",
-            "font": {"size": 30, "color":"dark blue", "family": "Arial"},
+            "font": {"size": 30, "color":"#2E86C1", "family": "Arial"},
         },
         gauge={
             'axis': {'range': [0, max_value], 'tickwidth': 1, 'tickcolor': "darkblue"},
@@ -153,7 +153,7 @@ def create_fear_greed_index(value, title="Greed Index", max_value=100):
     """
     value = int(value)
     mood = "Error"
-    color = "#000000"  # default color
+    color = "#2E86C1"  # default color
     
     # Define mood and colors based on value ranges
     if 0 <= value < 20:

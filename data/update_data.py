@@ -219,13 +219,19 @@ def fetch_and_enrich_news(keywords: List[str]) -> List[Dict]:
 
         # Configure newspaper
         config = Config()
-        config.browser_user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        config.browser_user_agent = (
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+)
         config.request_timeout = 10
 
         enriched_articles = []
         
         for article_data in data.get("articles", [])[:5]:
             try:
+                if article_data.get('title', '')=='' or article_data.get('title', '').lower()=='[removed]':
+                    continue
+
+                
                 # Basic article info from News API
                 article_info = {
                     'title': article_data.get('title', ''),
@@ -235,6 +241,7 @@ def fetch_and_enrich_news(keywords: List[str]) -> List[Dict]:
                     'published_at': article_data.get('publishedAt', ''),
                     'api_content': article_data.get('content', '')
                 }
+                
 
                 # Fetch full content using newspaper3k
                 article = Article(article_info['url'], config=config)
@@ -285,23 +292,8 @@ def clean_and_format_article(article: Dict) -> Dict:
     
     return article
 
-def format_article_for_display(article: Dict) -> str:
-    """
-    Format article for readable display.
-    """
-    return f"""
-Title: {article.get('title')}
-Source: {article.get('source')}
-Published: {article.get('published_at')}
-Authors: {', '.join(article.get('authors', []))}
 
-Summary:
-{article.get('summary', 'No summary available.')}
 
-Keywords: {', '.join(article.get('keywords', []))}
-
-Full Article URL: {article.get('url')}
-"""
 
 
 def save_data_to_json(data, file_name):
@@ -328,6 +320,7 @@ def save_data_to_json(data, file_name):
 # Automate data refresh
 def refresh_data():
     print("Refreshing data")
+    start=time.time()
 
 
     # Stocks data
@@ -359,7 +352,11 @@ def refresh_data():
         "volatility": {"volatility_index": bitcoin_volatility},
         "greed_index": crypto_greed_index,
         "news": crypto_news
-    }, "crypto_data")
+    }, "crypto_data")   
+
+    end=time.time()
+
+    print("Time taken to refresh Data:",round(end-start,2),"seconds")
 
     print("Data refresh completed.")
 
