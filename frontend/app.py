@@ -6,7 +6,7 @@ from pathlib import Path
 PARENT_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PARENT_DIR))
 
-from chat import process_user_input
+from chatbot.chat import process_user_input
 import data_read as read
 
 
@@ -54,14 +54,37 @@ st.subheader("💬 AI Chat Assistant", anchor="chat-section")
 AI_welcome_message = "Hi! How can I assist you with the Financial market today?"
 
 # Display only the latest AI response
-st.markdown(AI_welcome_message)
+def on_input_change():
+    st.session_state.trigger_send = True  # Set a flag to simulate the "Send" button press
 
-user_input = st.text_area("Type your message (press Shift+Enter for new line):", key="chat_input", height=100)
+# Initialize session state variables
+if "trigger_send" not in st.session_state:
+    st.session_state.trigger_send = False
+if "chat_input" not in st.session_state:
+    st.session_state.chat_input = ""
 
-if st.button("Send"):
+# Display text area with on_change callback
+user_input = st.text_area(
+    "Type your message (Shift+Enter for new line, Ctrl+Enter to send)",
+    key="chat_input",
+    height=100,
+    on_change=on_input_change,
+)
+
+# Button to process user input
+if st.button("Send") or st.session_state.trigger_send :
+    st.session_state.trigger_send = False
     if user_input.strip():
-        process_user_input(user_input.strip())
+        # Call the process_user_input function and get the result
+        result = process_user_input(user_input.strip())
 
+        # Handle the result based on the returned data
+        if "text" in result:
+            st.write(result["text"])  # Display the text response from the model
+        elif "plot" in result:
+            st.pyplot(result["plot"])  # Display the plot (matplotlib figure)
+        elif "error" in result:
+            st.error(result["error"])  # Display error message
 # --- Adding Space Between Sections ---
 st.markdown("<br><br>", unsafe_allow_html=True)
 
