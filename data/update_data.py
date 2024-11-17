@@ -6,6 +6,9 @@ import time
 import yfinance as yf
 import numpy as np
 from datetime import datetime, timedelta
+from newspaper import Article, Config
+import nltk
+from typing import List, Dict
 
 # Load API key and URLs from JSON config
 with open("data/config.json", "r") as config_file:
@@ -21,25 +24,14 @@ ticker_to_name = {stock["ticker"]: stock["name"] for stock in config["US30"]}
 stock_keywords = config['stock_keywords']
 crypto_keywords = config['crypto_keywords']
 
-# Fetch the Fear & Greed Index from Alternative.me API
-def get_fear_greed_index():
-    """
-    Fetch and return current Fear & Greed Index
-    """
-    try:
-        # Fetch data from Alternative.me API
-        response = requests.get("https://api.alternative.me/fng/")
-        data = response.json()
 
-        # Extract current day's data
-        current = data['data'][0]
+# Download required NLTK data for article summarization
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 
-        # Return the Fear & Greed index value and classification
-        return current['value'], current['value_classification']
 
-    except Exception as e:
-        print(f"Error fetching Fear & Greed Index: {str(e)}")
-        return None, None
 
 
 # Fetch stock data using yfinance
@@ -178,8 +170,30 @@ def fetch_crypto_greed_index():
         return None
 
 def fetch_news(keywords):
-    try:
+    articles = fetch_and_enrich_news(keywords)
+    if articles:
+        formatted_articles=[]
 
+        for idx,article in enumerate(articles,1):
+            # Clean and format the article
+            new_article = clean_and_format_article(article)
+            formatted_articles.append(new_article)
+        return formatted_articles
+    
+    return []
+        
+
+def fetch_and_enrich_news(keywords: List[str]) -> List[Dict]:
+    """
+    Fetch news articles and enrich them with full content and summaries.
+    
+    Args:
+        keywords (List[str]): List of keywords to search for
+        
+    Returns:
+        List[Dict]: List of enriched news articles
+    """
+    try:
         # Combine keywords
         query = " OR ".join(keywords)
         
@@ -190,9 +204,9 @@ def fetch_news(keywords):
             'q': query,
             'apiKey': NEWSAPI_KEY,
             'language': 'en',
-            'sortBy': 'popularity',  # Sort by popularity to get trending articles
+            'sortBy': 'popularity',
             'from': yesterday,
-            'pageSize': 5  # Limit to top 5 articles
+            'pageSize': 5
         }
         
         response = requests.get(urls["news_data"], params=params)
@@ -202,13 +216,92 @@ def fetch_news(keywords):
         if data.get("status") != "ok":
             print("API response not OK:", data.get("message", "Unknown error"))
             return []
+
+        # Configure newspaper
+        config = Config()
+        config.browser_user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        config.request_timeout = 10
+
+        enriched_articles = []
         
-        return data.get("articles", [])[:5]  # Top 5 articles
+        for article_data in data.get("articles", [])[:5]:
+            try:
+                # Basic article info from News API
+                article_info = {
+                    'title': article_data.get('title', ''),
+                    'description': article_data.get('description', ''),
+                    'url': article_data.get('url', ''),
+                    'source': article_data.get('source', {}).get('name', ''),
+                    'published_at': article_data.get('publishedAt', ''),
+                    'api_content': article_data.get('content', '')
+                }
+
+                # Fetch full content using newspaper3k
+                article = Article(article_info['url'], config=config)
+                article.download()
+                time.sleep(1)  # Be nice to servers
+                article.parse()
+                article.nlp()  # This generates summary and keywords
+                
+                # Only store a preview of the full text (first 1000 characters)
+                full_text = article.text[:1000] + '...' if len(article.text) > 1000 else article.text
+
+                # Enrich with full content and NLP features
+                article_info.update({
+                    'summary': article.summary,
+                    'keywords': article.keywords,
+                    'authors': article.authors,
+                    'top_image': article.top_image,
+                    'movies': article.movies,  # Video URLs if available
+                    'text_preview': full_text 
+                })
+
+                enriched_articles.append(article_info)
+                
+            except Exception as e:
+                print(f"Error processing article {article_data.get('url')}: {str(e)}")
+                # Add the article with basic info even if enrichment fails
+                enriched_articles.append(article_info)
+                continue
+
+        return enriched_articles
 
     except Exception as e:
         print(f"Error fetching news data: {e}")
         return []
 
+def clean_and_format_article(article: Dict) -> Dict:
+    """
+    Clean and format article content.
+    """
+    # Remove extra whitespace and normalize text
+    if article.get('full_text'):
+        article['full_text'] = ' '.join(article['full_text'].split())
+    
+    # Create a shorter summary if the article summary is too long
+    if article.get('summary') and len(article['summary']) > 500:
+        sentences = article['summary'].split('. ')
+        article['short_summary'] = '. '.join(sentences[:3]) + '.'
+    
+    return article
+
+def format_article_for_display(article: Dict) -> str:
+    """
+    Format article for readable display.
+    """
+    return f"""
+Title: {article.get('title')}
+Source: {article.get('source')}
+Published: {article.get('published_at')}
+Authors: {', '.join(article.get('authors', []))}
+
+Summary:
+{article.get('summary', 'No summary available.')}
+
+Keywords: {', '.join(article.get('keywords', []))}
+
+Full Article URL: {article.get('url')}
+"""
 
 
 def save_data_to_json(data, file_name):
@@ -235,8 +328,7 @@ def save_data_to_json(data, file_name):
 # Automate data refresh
 def refresh_data():
     print("Refreshing data")
-    # Fetch the current Fear & Greed Index value and classification
-    fear_greed_value, fear_greed_classification = get_fear_greed_index()
+
 
     # Stocks data
     top_stock_gainers, top_stock_losers = fetch_market_gainers_and_losers()

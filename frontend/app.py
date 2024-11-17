@@ -137,7 +137,7 @@ with col1:
 with col2:
     st.markdown("### 😈 Market Greed Meter")
     greed = read.fetch_market_greed_meter(market_type)
-    greed_fig = read.create_speedometer(greed, "Greed Index", 100)
+    greed_fig = read.create_fear_greed_index(greed)
     st.plotly_chart(greed_fig)
 
 # --- Adding Space Between Sections ---
@@ -149,4 +149,6 @@ news = read.fetch_market_news(market_type)
 
 for article in news:
     with st.expander(article["title"]):
-        st.write(article["description"])
+        st.write(article.get("summary","Summary is Not Available"))
+        url=article.get('url'," No link Available")
+        st.write(f"For more info : {url}")

@@ -2,6 +2,8 @@ import json
 from datetime import datetime, timedelta
 from pathlib import Path
 from data.update_data import refresh_data
+import plotly.graph_objects as go
+import numpy as np
 
 # Paths to JSON files
 
@@ -108,20 +110,108 @@ def create_speedometer(value, title, max_value):
     """
     Creates a Plotly speedometer gauge chart.
     """
-    import plotly.graph_objects as go
+
 
     fig = go.Figure(go.Indicator(
         mode="gauge+number",
         value=value,
-        title={"text": title},
+        title={"text": title,"font":{"size":30}},
+        number={
+            "valueformat": "",  # This ensures no decimal places
+            "prefix": "",
+            "suffix": "",
+            "font": {"size": 30, "color":"dark blue", "family": "Arial"},
+        },
         gauge={
-            'axis': {'range': [0, max_value]},
-            'bar': {'color': "blue"},
+            'axis': {'range': [0, max_value], 'tickwidth': 1, 'tickcolor': "darkblue"},
+            'bar': {'color': "rgba(255, 255, 255, 0.7)",'thickness': 0.4},
+
             'steps': [
-                {'range': [0, max_value * 0.4], 'color': "green"},
-                {'range': [max_value * 0.4, max_value * 0.7], 'color': "yellow"},
-                {'range': [max_value * 0.7, max_value], 'color': "red"},
+                {'range': [0, max_value * 0.2], 'color': "#00c853"},
+                {'range': [max_value * 0.2, max_value * 0.4], 'color': "#76ff03"},
+                {'range': [max_value * 0.4, max_value * 0.6], 'color': "#ffeb3b"},
+                {'range': [max_value * 0.6, max_value * 0.8], 'color': "#ff9800"},
+                {'range': [max_value * 0.8, max_value], "color": "#b60000"},
             ],
+            'threshold': {
+                'line': {'color': "white", 'width': 4},
+                'thickness': 0.75,
+                'value': value
+            }
+        }
+
+    ))
+
+
+
+    return fig
+
+
+def create_fear_greed_index(value, title="Greed Index", max_value=100):
+    """
+    Creates a Plotly speedometer gauge chart with mood text inside the meter.
+    """
+    value = int(value)
+    mood = "Error"
+    color = "#000000"  # default color
+    
+    # Define mood and colors based on value ranges
+    if 0 <= value < 20:
+        mood = "Extreme Fear"
+        color = "#00c853"
+    elif 20 <= value < 40:
+        mood = "Fear"
+        color = "#76ff03"
+    elif 40 <= value < 60:
+        mood = "Neutral"
+        color = "#ffeb3b"
+    elif 60 <= value < 80:
+        mood = "Greed"
+        color = "#ff9800"
+    elif 80 <= value <= 100:
+        mood = "Extreme Greed"
+        color = "#b60000"
+
+    fig = go.Figure(go.Indicator(
+        mode="gauge+number",
+        value=value,
+        title={"text": title,"font":{"size":30}},
+        number={
+            "valueformat": "",  # This ensures no decimal places
+            "prefix": "",
+            "suffix": "",
+            "font": {"size": 30, "color": color, "family": "Arial"},
+        },
+        gauge={
+            'axis': {'range': [0, max_value], 'tickwidth': 1, 'tickcolor': "darkblue"},
+            'bar': {'color': "rgba(255, 255, 255, 0.7)",'thickness': 0.4},
+
+            'steps': [
+                {'range': [0, max_value * 0.2], 'color': "#00c853"},
+                {'range': [max_value * 0.2, max_value * 0.4], 'color': "#76ff03"},
+                {'range': [max_value * 0.4, max_value * 0.6], 'color': "#ffeb3b"},
+                {'range': [max_value * 0.6, max_value * 0.8], 'color': "#ff9800"},
+                {'range': [max_value * 0.8, max_value], "color": "#b60000"},
+            ],
+            'threshold': {
+                'line': {'color': "white", 'width': 4},
+                'thickness': 0.75,
+                'value': value
+            }
         }
     ))
+    
+    # Add the mood text annotation in the center of the gauge
+    fig.add_annotation(
+        text=mood,
+        x=0.5,
+        y=0.25,  # Positioned slightly above center
+        showarrow=False,
+        font=dict(size=24, color=color),
+        xref='paper',
+        yref='paper'
+    )
+    
+
+    
     return fig

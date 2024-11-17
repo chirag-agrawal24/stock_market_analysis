@@ -1,5 +1,5 @@
 {
-    "timestamp": "2024-11-17 08:47:25",
+    "timestamp": "2024-11-17 19:15:44",
     "data": {
         "gainers": [
             {
@@ -72,73 +72,190 @@
             "value": "90",
             "value_classification": "Extreme Greed",
             "timestamp": "1731801600",
-            "time_until_update": "74553"
+            "time_until_update": "36869"
         },
         "news": [
             {
-                "source": {
-                    "id": null,
-                    "name": "Forbes"
-                },
-                "author": "Tom Spiggle, Senior Contributor, \n Tom Spiggle, Senior Contributor\n https://www.forbes.com/sites/tomspiggle/",
-                "title": "AMD Cuts 4% Of Workforce In Push Toward AI Dominance: What This Means For Workers And The Tech Industry",
-                "description": "With the gaming hardware market shrinking, AMD is reallocating resources to where it sees future potential.",
-                "url": "https://www.forbes.com/sites/tomspiggle/2024/11/15/amd-cuts-4-of-workforce-in-push-toward-ai-dominance-what-this-means-for-workers-and-the-tech-industry/",
-                "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6737df87ff8db3c8373163dc/0x0.jpg?format=jpg&crop=1984,1488,x0,y972,safe&height=900&width=1600&fit=bounds",
-                "publishedAt": "2024-11-16T00:02:36Z",
-                "content": "FILE - In this Oct. 14, 2009 file photo, an Advance Micro Devices (AMD) logo is shown on a computer ... [+] at Best Buy in Mountain View, Calif. AMD reports fourth-quarter financial results after the\u2026 [+6920 chars]"
+                "title": "Samsung Clears Galaxy Z Fold 6 Stock, Price Drops to $499 from $1,899 Before Black Friday",
+                "description": "Black Friday is now live at Samsung, and the deal on the Galaxy Z Fold 6 is absolutely mind-blowing.",
+                "url": "https://gizmodo.com/samsung-clears-galaxy-z-fold-6-stock-price-drops-to-499-from-1899-before-black-friday-2000525430",
+                "source": "Gizmodo.com",
+                "published_at": "2024-11-16T13:42:18Z",
+                "api_content": "Samsung has unleashed a great early Black Friday deal on its flagship foldable smartphone, the Galaxy Z Fold 6. The huge discount is available exclusively on Samsung\u2019s official website and presents s\u2026 [+2875 chars]",
+                "summary": "Samsung has unleashed a great early Black Friday deal on its flagship foldable smartphone, the Galaxy Z Fold 6.\nThe huge discount is available exclusively on Samsung\u2019s official website and presents substantial savings across all storage variants of the Z Fold 6.\nThe deal kicks off with an instant $700 discount on all storage configurations of the Galaxy Z Fold 6.\nBest Deal Ever SeenThe Galaxy Z Fold 6 itself is a marvel of modern smartphone technology and show Samsung capacity of innovation.\nUltimately, the Galaxy Z Fold 6 is running on Android 14 (with Samsung\u2019s One UI) and offers a refined user experience tailored for its unique form factor.",
+                "keywords": [
+                    "499",
+                    "samsung",
+                    "z",
+                    "camera",
+                    "display",
+                    "stock",
+                    "black",
+                    "deal",
+                    "foldable",
+                    "clears",
+                    "main",
+                    "drops",
+                    "galaxy",
+                    "fold",
+                    "price"
+                ],
+                "authors": [
+                    "Gizmodo Deals"
+                ],
+                "top_image": "https://gizmodo.com/app/uploads/2024/10/zfold-6-samsung.jpg",
+                "movies": [],
+                "text_preview": "Samsung has unleashed a great early Black Friday deal on its flagship foldable smartphone, the Galaxy Z Fold 6. The huge discount is available exclusively on Samsung\u2019s official website and presents substantial savings across all storage variants of the Z Fold 6.\n\nThe deal kicks off with an instant $700 discount on all storage configurations of the Galaxy Z Fold 6. This means the 256GB model, originally priced at $1,899, now starts at just $1,199. The same $700 reduction applies to the 512GB and 1TB versions which brings their prices down significantly as well. This alone is a great offer- considering the device\u2019s high-end specifications and innovative design.\n\nSee at Samsung.com\n\nHowever, the savings don\u2019t stop there. Samsung is sweetening the deal even further with an enhanced trade-in program: Customers can receive up to $1,200 off the original price when they trade in an eligible device. This trade-in offer is stackable with a $200 immediate discount and reduces the price of the 256...",
+                "short_summary": "Samsung has unleashed a great early Black Friday deal on its flagship foldable smartphone, the Galaxy Z Fold 6.\nThe huge discount is available exclusively on Samsung\u2019s official website and presents substantial savings across all storage variants of the Z Fold 6.\nThe deal kicks off with an instant $700 discount on all storage configurations of the Galaxy Z Fold 6.\nBest Deal Ever SeenThe Galaxy Z Fold 6 itself is a marvel of modern smartphone technology and show Samsung capacity of innovation.\nUltimately, the Galaxy Z Fold 6 is running on Android 14 (with Samsung\u2019s One UI) and offers a refined user experience tailored for its unique form factor.."
             },
             {
-                "source": {
-                    "id": null,
-                    "name": "Forbes"
-                },
-                "author": "Michael Goldstein, Contributor, \n Michael Goldstein, Contributor\n https://www.forbes.com/sites/michaelgoldstein/",
-                "title": "Airline Post-Election Optimism Tempered By Boeing Woes",
-                "description": "Airlines have been celebrating since Donald Trump's election, but optimism over less regulation is tempered by Boeing's continuing delivery problems.",
-                "url": "https://www.forbes.com/sites/michaelgoldstein/2024/11/15/airline-post-election-optimism-hindered-by-boeing-woes/",
-                "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/67380007d526bcfa995af069/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-                "publishedAt": "2024-11-16T02:43:58Z",
-                "content": "A Southwest Airlines Boeing 737 MAX is pushed back from the gate at San Diego International Airport ... [+] en route to Denver on August 24, 2024. (Photo by Kevin Carter/Getty Images)\r\nGetty Images\r\n\u2026 [+8002 chars]"
+                "title": "This Second Price Drop on the Samsung T9 SSD Brings It to a Record Low Price, Black Friday Starts Early",
+                "description": "Amazon has decided to lower the price -once again- on Samsung's excellent portable SSD.",
+                "url": "https://gizmodo.com/this-second-price-drop-on-the-samsung-t9-ssd-brings-it-to-a-record-low-price-black-friday-starts-early-2000524918",
+                "source": "Gizmodo.com",
+                "published_at": "2024-11-16T13:25:55Z",
+                "api_content": "This Saturday, Amazon has made (another) significant price reduction on the Samsung T9 4TB Portable SSD, bringing it down to an incredible $292, a steep drop from its original price of $549. This rep\u2026 [+2383 chars]",
+                "summary": "This Saturday, Amazon has made (another) significant price reduction on the Samsung T9 4TB Portable SSD, bringing it down to an incredible $292, a steep drop from its original price of $549.\nThis represents a massive 47% discount and marks a record low for this popular external storage solution just ahead of Black Friday.\nSee at AmazonOur Favorite Portable SSDInvesting in the Samsung T9 Portable SSD offers numerous advantages and makes it an excellent choice for anyone in need of reliable and high-performance storage.\nThe versatility of the Samsung T9 further enhances its appeal: It is compatible with a wide range of devices including PCs, gaming consoles, tablets and smartphones like the iPhone 16 or Galaxy S24 Ultra.\nAs we approach the holiday season (and closer to Black Friday), this deal on the Samsung T9 presents an excellent opportunity for gift-giving or treating yourself.",
+                "keywords": [
+                    "second",
+                    "samsung",
+                    "portable",
+                    "makes",
+                    "users",
+                    "early",
+                    "speed",
+                    "t9",
+                    "storage",
+                    "amazon",
+                    "ssd",
+                    "starts",
+                    "work",
+                    "drop",
+                    "record",
+                    "low",
+                    "price"
+                ],
+                "authors": [
+                    "Gizmodo Deals"
+                ],
+                "top_image": "https://gizmodo.com/app/uploads/2024/09/Samsung-T9-926.jpg",
+                "movies": [],
+                "text_preview": "This Saturday, Amazon has made (another) significant price reduction on the Samsung T9 4TB Portable SSD, bringing it down to an incredible $292, a steep drop from its original price of $549. This represents a massive 47% discount and marks a record low for this popular external storage solution just ahead of Black Friday.\n\nGiven the previous stock shortages earlier this month, it\u2019s uncertain how many units are available in this new batch.\n\nSee at Amazon\n\nOur Favorite Portable SSD\n\nInvesting in the Samsung T9 Portable SSD offers numerous advantages and makes it an excellent choice for anyone in need of reliable and high-performance storage. One of the standout features of this SSD is its exceptional speed: with read and write speeds reaching up to 2,000MB/s, the T9 allows users to transfer large files quickly and efficiently. This speed is beneficial for professionals such as video editors and photographers who frequently work with high-resolution content and enables them to load, edit,...",
+                "short_summary": "This Saturday, Amazon has made (another) significant price reduction on the Samsung T9 4TB Portable SSD, bringing it down to an incredible $292, a steep drop from its original price of $549.\nThis represents a massive 47% discount and marks a record low for this popular external storage solution just ahead of Black Friday.\nSee at AmazonOur Favorite Portable SSDInvesting in the Samsung T9 Portable SSD offers numerous advantages and makes it an excellent choice for anyone in need of reliable and high-performance storage.\nThe versatility of the Samsung T9 further enhances its appeal: It is compatible with a wide range of devices including PCs, gaming consoles, tablets and smartphones like the iPhone 16 or Galaxy S24 Ultra.\nAs we approach the holiday season (and closer to Black Friday), this deal on the Samsung T9 presents an excellent opportunity for gift-giving or treating yourself.."
             },
             {
-                "source": {
-                    "id": "cbs-news",
-                    "name": "CBS News"
-                },
-                "author": "Carter Evans",
-                "title": "Why Trump's tariff proposals have some business owners worried",
-                "description": "President-elect Donald Trump campaigned on implementing a blanket tariff of 10% to 20% on all imports, along with an additional 60% or more on goods from China.",
-                "url": "https://www.cbsnews.com/news/trump-tariff-proposals-business-owners-worried-about-impact/",
-                "urlToImage": "https://assets1.cbsnewsstatic.com/hub/i/r/2024/11/16/92063e75-40b9-477b-bc13-2f5e5a719dfe/thumbnail/1200x630/7ed1db974075c2ef2366fee8d8d6c1f3/1731718378244.png?v=cc5700e8049ccc64c4e0272313675898",
-                "publishedAt": "2024-11-16T01:03:04Z",
-                "content": "Los Angeles\u00a0\u2014 Bobby Djavaheri is trying to stock up his warehouse with appliances from overseas, while he can still afford it.\r\n\"We've been preparing for the last six months \u2014 both our factories and \u2026 [+2638 chars]"
+                "title": "Tough votes on Trump Cabinet picks could pose big risks for midterm Senate candidates",
+                "description": "Lawmakers running for reelection loathe tough votes. And for senators up in purple states in two years, those tough votes are coming early.",
+                "url": "https://abcnews.go.com/Politics/tough-votes-trump-cabinet-picks-pose-big-risks/story?id=115916275",
+                "source": "ABC News",
+                "published_at": "2024-11-16T10:08:33Z",
+                "api_content": "Lawmakers running for reelection loathe tough votes. And for senators up in purple states in two years, those tough votes are coming early.\r\nPresident-elect Donald Trump is moving at a lightning pace\u2026 [+5762 chars]",
+                "summary": "\"The base is watching how they handle Trump's nominees,\" one Republican said.\nFor frontline senators who hold the key to the next Senate majority, navigating their confirmations will be a minefield.\nSome of Trump's nominees are not anticipated to run into significant roadblocks.\n\"There will be Trump voters who remember how Republican senators handle these nominations.\n\"President Trump and JD Vance are going to be running the Senate,\" Alabama Sen. Tommy Tuberville, a Trump ally, said on Fox Business this week.",
+                "keywords": [
+                    "midterm",
+                    "senate",
+                    "trump",
+                    "votes",
+                    "republicans",
+                    "nominees",
+                    "sen",
+                    "trumps",
+                    "controversial",
+                    "tough",
+                    "risks",
+                    "picks",
+                    "senators",
+                    "republican",
+                    "candidates",
+                    "pose",
+                    "cabinet"
+                ],
+                "authors": [
+                    "Abc News"
+                ],
+                "top_image": "https://i.abcnewsfe.com/a/8f1f90f4-4f16-446f-af64-a598304ed892/matt-gaetz-1-ap-gmh-241115_1731682225794_hpMain_16x9.jpg?w=1600",
+                "movies": [],
+                "text_preview": "\"The base is watching how they handle Trump's nominees,\" one Republican said.\n\nLawmakers running for reelection loathe tough votes. And for senators up in purple states in two years, those tough votes are coming early.\n\nPresident-elect Donald Trump is moving at a lightning pace to stock up his administration, mixing in conventional picks like Florida Sen. Marco Rubio for secretary of state with controversial moves like putting up Florida Rep. Matt Gaetz as attorney general and Robert F. Kennedy, Jr. for health and human services secretary. For frontline senators who hold the key to the next Senate majority, navigating their confirmations will be a minefield.\n\nRepublicans will be defending the seats of North Carolina Sen. Thom Tillis and Maine Sen. Susan Collins, while Democrats will be working to protect Georgia Sen. Jon Ossoff and Michigan Sen. Gary Peters. Their confirmation votes for Trump's Cabinet picks offer a chance to prove bipartisan bona fides, but backing a nominee who is to...",
+                "short_summary": "\"The base is watching how they handle Trump's nominees,\" one Republican said.\nFor frontline senators who hold the key to the next Senate majority, navigating their confirmations will be a minefield.\nSome of Trump's nominees are not anticipated to run into significant roadblocks.\n\"There will be Trump voters who remember how Republican senators handle these nominations.\n\"President Trump and JD Vance are going to be running the Senate,\" Alabama Sen. Tommy Tuberville, a Trump ally, said on Fox Business this week.."
             },
             {
-                "source": {
-                    "id": null,
-                    "name": "WPIX 11 New York"
-                },
-                "author": "James Ford",
-                "title": "After Whoopi Goldberg criticizes NYC bakery, customers pour in",
-                "description": "GREAT KILLS, Staten Island (PIX11) \u2014 Whoopi Goldberg claimed that a historic bakery on Staten Island wouldn\u2019t fill a dessert request that she\u2019d made because ...",
-                "url": "https://pix11.com/news/local-news/staten-island/after-whoopi-goldberg-criticizes-nyc-bakery-customers-pour-in/",
-                "urlToImage": "https://media.zenfs.com/en/wpix_new_york_city_ny_articles_672/72ffa1394423fb9b4e40197e4190865a",
-                "publishedAt": "2024-11-16T00:12:54Z",
-                "content": "GREAT KILLS, Staten Island (PIX11) Whoopi Goldberg claimed that a historic bakery on Staten Island wouldnt fill a dessert request that shed made because the business didnt like her politics.\r\nThe own\u2026 [+4368 chars]"
+                "title": "Who Did Voice Acting Legend Mel Blanc Play On Gilligan's Island?",
+                "description": "Mel Blanc, the legendary voice actor of Looney Tunes fame and much, much more, lent his talents to Gilligan's Island in a fittingly zany manner.",
+                "url": "https://www.slashfilm.com/1712894/mel-blanc-gilligans-island-roles-explained/",
+                "source": "/FILM",
+                "published_at": "2024-11-16T11:00:30Z",
+                "api_content": "Mel Blanc was already a celebrity by the time \"Gilligan's Island\" was on the air, having acted in hundreds of Warner Bros. shorts., and \"Gilligan's Island\" debuted when \"The Flintstones\" was already \u2026 [+1663 chars]",
+                "summary": "In the \"Gilligan's Island\" episode \"New Neighbor Sam,\" the castaways begin hearing mysterious voices from the bushes.\nThe macaw also speaks like a gangster, so the Professor figures it must have once belonged to a career criminal, but somehow escaped and flew to their island.\nThe Professor's suspicions are confirmed when Sam steals a diamond belonging to Mrs. Howell (Natalie Schafer) and tries to abscond with it.\nSam was voiced (at least partly) by Mel Blanc, one of the preeminent practitioners of the craft.\nas well as Barney Rubble, Mr. Spacely, Secret Squirrel, Speed Buggy, Captain Caveman, Twiki, Heathcliff, and a hundred others besides.",
+                "keywords": [
+                    "roles",
+                    "gilligans",
+                    "voices",
+                    "loot",
+                    "explained",
+                    "island",
+                    "hidden",
+                    "parrot",
+                    "voiced",
+                    "mel",
+                    "professor",
+                    "tries",
+                    "sam",
+                    "blancs",
+                    "macaw"
+                ],
+                "authors": [
+                    "Witney Seibold"
+                ],
+                "top_image": "https://www.slashfilm.com/img/gallery/who-did-voice-acting-legend-mel-blanc-play-on-gilligans-island/l-intro-1731533250.jpg",
+                "movies": [],
+                "text_preview": "In the \"Gilligan's Island\" episode \"New Neighbor Sam,\" the castaways begin hearing mysterious voices from the bushes. Suspecting there are other people on the island, several of them go to investigate and discover \u2014 after some slapstick shenanigans, of course \u2014 that the voices were all coming from a talking macaw. The macaw identifies itself as Sam, and the Professor (Russell Johnson) tries to get the bird to say more, hoping to glean more information as to where it came from. The macaw also speaks like a gangster, so the Professor figures it must have once belonged to a career criminal, but somehow escaped and flew to their island.\n\nThe Professor's suspicions are confirmed when Sam steals a diamond belonging to Mrs. Howell (Natalie Schafer) and tries to abscond with it. Clearly, this macaw knows about jewels. Eventually, the castaways find the cave where the parrot had been hiding, and discover an old stash of loot as well as a newspaper explaining that it was hidden there way back in...",
+                "short_summary": "In the \"Gilligan's Island\" episode \"New Neighbor Sam,\" the castaways begin hearing mysterious voices from the bushes.\nThe macaw also speaks like a gangster, so the Professor figures it must have once belonged to a career criminal, but somehow escaped and flew to their island.\nThe Professor's suspicions are confirmed when Sam steals a diamond belonging to Mrs. Howell (Natalie Schafer) and tries to abscond with it.\nSam was voiced (at least partly) by Mel Blanc, one of the preeminent practitioners of the craft.\nas well as Barney Rubble, Mr. Spacely, Secret Squirrel, Speed Buggy, Captain Caveman, Twiki, Heathcliff, and a hundred others besides.."
             },
             {
-                "source": {
-                    "id": null,
-                    "name": "Dealcatcher.com"
-                },
-                "author": null,
-                "title": "Amazon - Cordless Heated Knee Brace Wrap $25.29",
-                "description": "Huge Savings! Stack both discounts to get this Cordless Heated Knee Brace Wrap for $25.29.<br /><br /><strong>More Ways to Save at Amazon:</strong><ul><li>Don't already have Amazon Prime? <a rel=\"nofollow\" href=\"https://amzn.to/3S9yS1w\" target=\"_blank\">Regist\u2026",
-                "url": "https://www.dealcatcher.com/deals/health-beauty/medicine/cordless-heated-knee-brace-wrap-998326702",
-                "urlToImage": "https://www.dealcatcher.com/__og-image__/image/deals/health-beauty/medicine/cordless-heated-knee-brace-wrap-998326702/og.png",
-                "publishedAt": "2024-11-16T01:26:35Z",
-                "content": "Stock up on medicine &amp; first aid supplies from Target, Walmart, Amazon &amp; more. Find deals on everything you need for your medicine cabinet."
+                "title": "Flex 24V Compact Drill & Impact Driver Kit w/ 2x 2.5 Ah Batteries + Charger $99 + Free Shipping",
+                "description": "Lowe's has *Flex 24V Compact Drill & Impact Driver Kit w/ 2x 2.5 Ah Batteries + Charger* (FXM205-2A) on sale for *$99*. *Shipping is free*, otherwise choose free store pickup where stock permits. \n...",
+                "url": "https://slickdeals.net/f/17892435-flex-24v-compact-brushless-drill-and-impact-driver-kit-99-lowe-s?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+                "source": "Slickdeals.net",
+                "published_at": "2024-11-16T05:29:47Z",
+                "api_content": "If you're going to pick this item up In-Store anyway and you'd like a $10 credit towards your next $20 purchase, try this: Add one Flex to your cart but go through the motions As If you want it shipp\u2026 [+663 chars]",
+                "summary": "Deal History includes data from multiple reputable stores, such as Best Buy, Target, and Walmart.\nThe lowest price among stores for a given day is selected as the \"Sale Price\".\nSale Price does not include sale prices at Amazon unless a deal was posted by a community member.",
+                "keywords": [
+                    "sale",
+                    "compact",
+                    "stores",
+                    "kit",
+                    "flex",
+                    "selected",
+                    "99",
+                    "reputable",
+                    "driver",
+                    "price",
+                    "lowes",
+                    "brushless",
+                    "drill",
+                    "impact",
+                    "pricesale",
+                    "24v",
+                    "deal",
+                    "walmart",
+                    "target",
+                    "unless"
+                ],
+                "authors": [
+                    "Day Ago",
+                    "Joined Oct",
+                    "Joined Jul",
+                    "Joined Apr",
+                    "Joined Nov",
+                    "Joined Feb",
+                    "Joined Jan",
+                    "Joined Sep",
+                    "Joined Dec",
+                    "Joined Mar"
+                ],
+                "top_image": "https://static.slickdealscdn.com/images/sd_share_logo.png?9261",
+                "movies": [],
+                "text_preview": "Deal History includes data from multiple reputable stores, such as Best Buy, Target, and Walmart. The lowest price among stores for a given day is selected as the \"Sale Price\".\n\n\n\nSale Price does not include sale prices at Amazon unless a deal was posted by a community member."
             }
         ]
     }
