@@ -46,7 +46,7 @@ Follow these steps to set up and run the **Financial Market Analysis Tool**:
 
 1. **Clone the repository**:  
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/chirag-agrawal24/stock_market_analysis.git
    cd stock_market_analysis
    ```  
 
