@@ -17,7 +17,7 @@ The project is organized into the following directories and files:
    - **[`chat.py`](chatbot/chat.py)**: Implements the chatbot's logic and defines how it generates responses.  
 
 ### 2. **[`data/`](data)**
-   - **[`config.json`](data/config.json)**: Stores API keys, stock tickers (e.g., US30), URLs, and relevant keywords.  
+   - **[`config.json`](data/config.json)**: Stores URLs , stock tickers (e.g., US30), and relevant keywords.  
    - **[`update_data.py`](data/update_data.py)**: Functions for refreshing and saving market data into JSON files.  
    - **[`stock_data.json`](data/stock_data.json)**: Stores updated stock market data, including top gainers, losers, volatility, and sentiment analysis.  
    - **[`crypto_data.json`](data/crypto_data.json)**: Stores updated cryptocurrency market data with similar attributes.  
@@ -29,7 +29,7 @@ The project is organized into the following directories and files:
 ### 4. **Other Files**
    - **[`requirements.txt`](requirements.txt)**: Lists all the dependencies required to run the project.  
    - **[`README.md`](README.md)**: Documentation for the project, including setup instructions.  
-
+   - **[`.streamlit/secrets.toml`](.streamlit/secrets.toml)** : Secrets to securely save API KEYS
 
 
 ---
@@ -57,7 +57,7 @@ Follow these steps to set up and run the **Financial Market Analysis Tool**:
    ```  
 
 3. **Set up the configuration**:  
-   - Open the `data/config.json` file and input your **API keys**, **URLs**, and other required information (such as stock tickers and keywords).  
+   - Open the [`.streamlit/secrets.toml`](.streamlit/secrets.toml) file and input your **API keys**
 
 4. **Run the application**:  
    Start the Streamlit frontend by running:  
