@@ -1,9 +1,10 @@
 import json
 import google.generativeai as genai
 from chatbot.functions import available_functions, functions
+import streamlit as st # for secret api key
 
 # Configure the API key for generative AI
-genai.configure(api_key=json.load(open("data/config.json"))['gemini api key'])
+genai.configure(api_key=st.secrets["general"]["gemini_api_key"])
 model = genai.GenerativeModel('gemini-pro')
 
 

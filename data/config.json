@@ -1,6 +1,4 @@
 {
-    "NEWSAPI_KEY": "YOUR API KEY",
-    "gemini api key":"YOUR API KEY",
     "urls": {
         "crypto_data": "https://api.coingecko.com/api/v3/coins/markets",
         "crypto_gainers_losers": "https://api.coingecko.com/api/v3/coins/markets",

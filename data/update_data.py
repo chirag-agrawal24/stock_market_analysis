@@ -10,11 +10,13 @@ from newspaper import Article, Config
 import nltk
 from typing import List, Dict
 
+import streamlit as st
+
 # Load API key and URLs from JSON config
 with open("data/config.json", "r") as config_file:
     config = json.load(config_file)
 
-NEWSAPI_KEY = config["NEWSAPI_KEY"]
+NEWSAPI_KEY = st.secrets["general"]["NEWSAPI_KEY"]
 urls = config["urls"]
 TOP_30_STOCKS = [ stock["ticker"] for stock in config["US30"]]
 
