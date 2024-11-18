@@ -54,7 +54,7 @@ def process_user_input(user_input):
                     result = function(**params)  # Call the function with unpacked parameters
 
                     # Check if the result is a plot (based on function name)
-                    if function_name in ["plot_stock_price", "plot_crypto_price_graph"]:
+                    if function_name in ["plot_stock_price", "plot_crypto_price_graph", "plot_EMA", "plot_SMA"]:
                         # Return the plot object (matplotlib figure)
                         return {"plot": result}
                     else:

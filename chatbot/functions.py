@@ -1,23 +1,53 @@
 import yfinance as yf
 import matplotlib.pyplot as plt
 
-# Define functions
+
 def get_stock_price(ticker):
     return str(yf.Ticker(ticker).history(period='1y')['Close'].iloc[-1])
 
 
-def calculate_SMA(ticker, window):
-    data = yf.Ticker(ticker).history(period='1y')['Close']
-    return str(data.rolling(window=window).mean().iloc[-1])
+def plot_SMA(ticker, window=20, period='1y'):
+    # Get stock data
+    data = yf.Ticker(ticker).history(period=period)
+    close_prices = data['Close']
+
+    # Calculate SMA
+    sma = close_prices.rolling(window=window, min_periods=1).mean()  # Added min_periods=1
+
+    # Create the plot
+    plt.figure(figsize=(10, 5))
+    plt.plot(close_prices.index, close_prices, label=f'{ticker} Stock Price', alpha=0.7)
+    plt.plot(sma.index, sma, label=f'SMA ({window} days)', linewidth=2)
+    plt.title(f'{ticker} Stock Price and {window}-Day SMA')
+    plt.xlabel('Date')
+    plt.ylabel('Price ($)')
+    plt.grid(True)
+    plt.legend()
+    return plt
 
 
-def calculate_EMA(ticker, window):
-    data = yf.Ticker(ticker).history(period='1y')['Close']
-    return str(data.ewm(span=window, adjust=False).mean().iloc[-1])
+def plot_EMA(ticker, window=20, period='1y'):
+    # Get stock data
+    data = yf.Ticker(ticker).history(period=period)
+    close_prices = data['Close']
+
+    # Calculate EMA
+    ema = close_prices.ewm(span=window, adjust=False).mean()
+
+    # Create the plot
+    plt.figure(figsize=(10, 5))
+    plt.plot(close_prices.index, close_prices, label=f'{ticker} Stock Price', alpha=0.7)
+    plt.plot(ema.index, ema, label=f'EMA ({window} days)', linewidth=2, color='red')
+    plt.title(f'{ticker} Stock Price and {window}-Day EMA')
+    plt.xlabel('Date')
+    plt.ylabel('Price ($)')
+    plt.grid(True)
+    plt.legend()
+    return plt
 
 
-def calculate_RSI(ticker):
-    data = yf.Ticker(ticker).history(period='1y')['Close']
+def calculate_RSI(ticker, period='1y'):
+    data = yf.Ticker(ticker).history(period=period)['Close']
     delta = data.diff()
     gain = delta.where(delta > 0, 0)
     loss = -delta.where(delta < 0, 0)
@@ -28,17 +58,24 @@ def calculate_RSI(ticker):
     return str(rsi.iloc[-1])
 
 
-def plot_stock_price(ticker):
-    data = yf.Ticker(ticker).history(period='1y')['Close']
+def plot_stock_price(ticker, window=None, period='1y'):
+    data = yf.Ticker(ticker).history(period=period)
+    close_prices = data['Close']
 
     plt.figure(figsize=(10, 5))
-    plt.plot(data.index, data, label=f'{ticker} Stock Price')
-    plt.title('Stock Price Over Last Year')
+    plt.plot(close_prices.index, close_prices, label=f'{ticker} Stock Price')
+
+    if window:
+        # Add moving average if window is specified
+        ma = close_prices.rolling(window=window, min_periods=1).mean()  # Added min_periods=1
+        plt.plot(ma.index, ma, label=f'MA ({window} days)', linestyle='--')
+
+    plt.title(f'{ticker} Stock Price Over {period}')
     plt.xlabel('Date')
     plt.ylabel('Stock Price ($)')
     plt.grid(True)
     plt.legend()
-    return plt  # Return the plot instead of directly displaying it
+    return plt
 
 
 def get_crypto_price(crypto_symbol):
@@ -48,21 +85,28 @@ def get_crypto_price(crypto_symbol):
     return str(current_price)
 
 
-def plot_crypto_price_graph(crypto_symbol):
+def plot_crypto_price_graph(crypto_symbol, window=None, period='1y'):
     crypto_ticker = yf.Ticker(crypto_symbol + "-USD")
-    data = crypto_ticker.history(period='1y')['Close']
+    data = crypto_ticker.history(period=period)
+    close_prices = data['Close']
 
     plt.figure(figsize=(10, 5))
-    plt.plot(data.index, data, label=f'{crypto_symbol} Price')
-    plt.title(f'{crypto_symbol} Price Over Last Year')
+    plt.plot(close_prices.index, close_prices, label=f'{crypto_symbol} Price')
+
+    if window:
+        # Add moving average if window is specified
+        ma = close_prices.rolling(window=window, min_periods=1).mean()  # Added min_periods=1
+        plt.plot(ma.index, ma, label=f'MA ({window} days)', linestyle='--')
+
+    plt.title(f'{crypto_symbol} Price Over {period}')
     plt.xlabel('Date')
     plt.ylabel('Price (USD)')
     plt.grid(True)
     plt.legend()
-    return plt  # Return the plot instead of directly displaying it
+    return plt
 
 
-# Define available functions
+# Update the functions list to include the new plotting functions
 functions = [
     {
         'name': 'get_stock_price',
@@ -79,8 +123,8 @@ functions = [
         }
     },
     {
-        'name': 'calculate_SMA',
-        'description': 'Calculates the Simple Moving Average (SMA) for a given stock ticker over a specified window.',
+        'name': 'plot_SMA',
+        'description': 'Plots the stock price and Simple Moving Average (SMA) for a given stock ticker over a specified window.',
         'parameters': {
             'type': 'object',
             'properties': {
@@ -97,8 +141,8 @@ functions = [
         }
     },
     {
-        'name': 'calculate_EMA',
-        'description': 'Calculates the Exponential Moving Average (EMA) for a given stock ticker over a specified window.',
+        'name': 'plot_EMA',
+        'description': 'Plots the stock price and Exponential Moving Average (EMA) for a given stock ticker over a specified window.',
         'parameters': {
             'type': 'object',
             'properties': {
@@ -158,7 +202,7 @@ functions = [
     },
     {
         'name': 'plot_crypto_price_graph',
-        'description': 'Plots the price graph and, graph of a specified cryptocurrency over the last year.',
+        'description': 'Plots the price graph of a specified cryptocurrency over the last year.',
         'parameters': {
             'type': 'object',
             'properties': {
@@ -172,10 +216,11 @@ functions = [
     }
 ]
 
+# Update the available functions dictionary
 available_functions = {
     'get_stock_price': get_stock_price,
-    'calculate_SMA': calculate_SMA,
-    'calculate_EMA': calculate_EMA,
+    'plot_SMA': plot_SMA,
+    'plot_EMA': plot_EMA,
     'calculate_RSI': calculate_RSI,
     'plot_stock_price': plot_stock_price,
     'get_crypto_price': get_crypto_price,
