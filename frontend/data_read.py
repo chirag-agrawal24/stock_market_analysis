@@ -55,17 +55,32 @@ def fetch_top_gainers(stock_or_crypto):
         transformed_gainers = []
         for coin in gainers:
             transformed_coin = {
-                "symbol": coin["symbol"],
-                "name": coin["name"],
-                "current_price": coin["current_price"],
-                "percent_change": coin["price_change_percentage_24h"]  # Rename price_change_percentage_24h to percent_change
+                "Symbol": coin["symbol"],
+                "Name": coin["name"],
+                "Current price": coin["current_price"],
+                "Percent Change": coin["price_change_percentage_24h"]  
             }
             transformed_gainers.append(transformed_coin)
         
         return transformed_gainers
     else:
         data = load_data(STOCK_FILE)
-        return data["data"]["gainers"]
+        # Extract and reformat the gainers
+        gainers = data["data"]["gainers"]
+        
+        # Transform each gainers entry
+        transformed_gainers = []
+        for coin in gainers:
+            transformed_coin = {
+                "Symbol": coin["symbol"],
+                "Name": coin["company_name"],
+                "Current price": coin["current_price"],
+                "Percent Change": coin["percent_change"]  
+            }
+            transformed_gainers.append(transformed_coin)
+        
+        return transformed_gainers
+        
 
 
 def fetch_top_losers(stock_or_crypto):
@@ -78,17 +93,29 @@ def fetch_top_losers(stock_or_crypto):
         transformed_losers = []
         for coin in losers:
             transformed_coin = {
-                "symbol": coin["symbol"],
-                "name": coin["name"],
-                "current_price": coin["current_price"],
-                "percent_change": coin["price_change_percentage_24h"]  # Rename price_change_percentage_24h to percent_change
+                "Symbol": coin["symbol"],
+                "Name": coin["name"],
+                "Current price": coin["current_price"],
+                "Percent Change": coin["price_change_percentage_24h"]  # Rename price_change_percentage_24h to percent_change
             }
             transformed_losers.append(transformed_coin)
         
         return transformed_losers
     else:
         data = load_data(STOCK_FILE)
-        return data["data"]["losers"]
+        losers = data["data"]["losers"]
+        transformed_losers = []
+        for coin in losers:
+            transformed_coin = {
+                "Symbol": coin["symbol"],
+                "Name": coin["company_name"],
+                "Current price": coin["current_price"],
+                "Percent Change": coin["percent_change"]  
+            }
+            transformed_losers.append(transformed_coin)
+        
+        return transformed_losers
+        
 
 
 def fetch_market_news(stock_or_crypto):
