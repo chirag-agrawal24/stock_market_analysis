@@ -208,7 +208,6 @@ def fetch_and_enrich_news(keywords: List[str]) -> List[Dict]:
             'language': 'en',
             'sortBy': 'popularity',
             'from': yesterday,
-            'pageSize': 5
         }
         
         response = requests.get(urls["news_data"], params=params)
@@ -222,13 +221,16 @@ def fetch_and_enrich_news(keywords: List[str]) -> List[Dict]:
         # Configure newspaper
         config = Config()
         config.browser_user_agent = (
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Brave/1.0.0.0 Safari/537.36'
 )
+
         config.request_timeout = 10
 
         enriched_articles = []
         
-        for article_data in data.get("articles", [])[:5]:
+        for article_data in data.get("articles", []):
+            if len(enriched_articles)>=5:
+                break
             try:
                 if article_data.get('title', '')=='' or article_data.get('title', '').lower()=='[removed]':
                     continue
@@ -266,11 +268,11 @@ def fetch_and_enrich_news(keywords: List[str]) -> List[Dict]:
                 })
 
                 enriched_articles.append(article_info)
+
                 
             except Exception as e:
                 print(f"Error processing article {article_data.get('url')}: {str(e)}")
                 # Add the article with basic info even if enrichment fails
-                enriched_articles.append(article_info)
                 continue
 
         return enriched_articles
