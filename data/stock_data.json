@@ -1,238 +1,272 @@
 {
-    "timestamp": "2024-11-18 08:42:39",
+    "timestamp": "2024-11-18 21:51:42 EST-0500",
     "data": {
         "gainers": [
             {
-                "symbol": "DIS",
-                "company_name": "The Walt Disney Company",
-                "current_price": 115.08000183105469,
-                "percent_change": 5.4618758563579135
-            },
-            {
-                "symbol": "VZ",
-                "company_name": "Verizon Communications Inc.",
-                "current_price": 41.650001525878906,
-                "percent_change": 1.9084967320261437
-            },
-            {
-                "symbol": "TRV",
-                "company_name": "The Travelers Companies, Inc.",
-                "current_price": 260.82000732421875,
-                "percent_change": 1.6762897609190581
+                "symbol": "WMT",
+                "company_name": "Walmart Inc.",
+                "current_price": 86.5999984741211,
+                "percent_change": 2.997141517824817
             },
             {
                 "symbol": "BA",
                 "company_name": "Boeing Company",
-                "current_price": 140.19000244140625,
-                "percent_change": 1.4840039531022542
+                "current_price": 145.60000610351562,
+                "percent_change": 1.2024821332057225
             },
             {
-                "symbol": "PG",
-                "company_name": "The Procter & Gamble Company",
-                "current_price": 169.5399932861328,
-                "percent_change": 1.4723434451273112
-            }
-        ],
-        "losers": [
-            {
-                "symbol": "AMGN",
-                "company_name": "Amgen Inc.",
-                "current_price": 283.6099853515625,
-                "percent_change": -4.163149268116416
+                "symbol": "KO",
+                "company_name": "The Coca-Cola Company",
+                "current_price": 62.59000015258789,
+                "percent_change": 1.180083309139462
             },
             {
-                "symbol": "WBA",
-                "company_name": "Walgreens Boots Alliance, Inc.",
-                "current_price": 8.479999542236328,
-                "percent_change": -3.745753253831611
+                "symbol": "IBM",
+                "company_name": "International Business Machines Corporation",
+                "current_price": 210.25,
+                "percent_change": 1.0380141766171318
             },
             {
                 "symbol": "MSFT",
                 "company_name": "Microsoft Corporation",
-                "current_price": 415.0,
-                "percent_change": -2.785264175886017
+                "current_price": 417.7900085449219,
+                "percent_change": 0.48826215403478546
+            }
+        ],
+        "losers": [
+            {
+                "symbol": "WBA",
+                "company_name": "Walgreens Boots Alliance, Inc.",
+                "current_price": 8.289999961853027,
+                "percent_change": -4.2725160748085935
             },
             {
                 "symbol": "INTC",
                 "company_name": "Intel Corporation",
-                "current_price": 24.350000381469727,
-                "percent_change": -2.716741056817422
+                "current_price": 24.200000762939453,
+                "percent_change": -2.5764870600524565
             },
             {
-                "symbol": "MRK",
-                "company_name": "Merck & Co., Inc.",
-                "current_price": 96.30999755859375,
-                "percent_change": -2.0841836509119203
+                "symbol": "UNH",
+                "company_name": "UnitedHealth Group Incorporated",
+                "current_price": 577.0,
+                "percent_change": -2.145344507809167
+            },
+            {
+                "symbol": "MMM",
+                "company_name": "3M Company",
+                "current_price": 128.19000244140625,
+                "percent_change": -1.521084547431015
+            },
+            {
+                "symbol": "XOM",
+                "company_name": "Exxon Mobil Corporation",
+                "current_price": 118.62999725341797,
+                "percent_change": -1.396392934309206
             }
         ],
         "volatility": {
-            "vix_level": 16.139999389648438
+            "vix_level": 16.350000381469727
         },
         "greed_index": {
             "value": "83",
             "value_classification": "Extreme Greed",
-            "timestamp": "1731888000",
-            "time_until_update": "74852"
+            "timestamp": "1732060800",
+            "time_until_update": "76125"
         },
         "news": [
             {
-                "title": "Pharmacies yanking cold medicines from shelves...",
-                "description": "Feeling stuffy and ready to reach for NyQuil, Benadryl, or Sudafed PE? Not so fast. The Food and Drug Administration has proposed ending the use of oral...",
-                "url": "https://www.sun-sentinel.com/2024/11/14/pharmacies-are-yanking-cold-medicines-from-shelves-so-what-are-the-options-now/",
-                "source": "Sun Sentinel",
-                "published_at": "2024-11-17T02:31:37Z",
-                "api_content": "Yahoo is using AI to generate takeaways from this article. This means the info may not always match what's in the article. Reporting mistakes helps us improve the experience.Generate Key Takeaways\r\nF\u2026 [+3262 chars]",
-                "summary": "The Food and Drug Administration (FDA) has proposed ending the use of oral phenylephrine, a common ingredient found in many cold and allergy medicines \u2014 and some pharmacies already are yanking the popular products off shelves.\nThe researchers evaluated multiple studies done on oral phenylephrine and combined them into a meta-analysis.\nThe FDA is allowing the public to comment for the next six months before it decides whether to pull medications with oral phenylephrine from shelves.\nA new Women\u2019s Imaging CenterThe Palm Beach Health Network has debuted a Palm Court Women\u2019s Imaging Center in Delray Beach.\nOthers in the Palm Beach Health Network include Good Samaritan Medical Center in West Palm Beach, Imaging Center at Palm Beach Gardens, Imaging Center at Royal Palm Beach, and Comprehensive Breast Center at Good Samaritan Medical Center.",
+                "title": "ICE Started Ramping Up Its Surveillance Arsenal Immediately After Donald Trump Won",
+                "description": "US Immigration and Customs Enforcement put out a fresh call for contracts for surveillance technologies before an anticipated surge in the number of people it monitors ahead of deportation hearings.",
+                "url": "https://www.wired.com/story/ice-surveillance-contracts-isap/",
+                "source": "Wired",
+                "published_at": "2024-11-13T12:00:00Z",
+                "api_content": "Compared to its recent November notice, ICE was more detailed about its 2025 plans in a different notice released last year. This earlier notice shows that ICE was preparing for a more intense immigr\u2026 [+2023 chars]",
+                "summary": "The notice signals the mechanisms through which ICE will expand its intensive surveillance of people awaiting deportation hearings\u2014a list that could grow from under 200,000 to more than 5 million.\nHowever, it\u2019s likely that many granular aspects of a mass monitoring, detention, and deportation program would be planned by private companies contracting with ICE.\nThe notice says companies must have facilities with \u201csuitably large intake rooms\u201d for people being enrolled in ICE surveillance.\nFor ICE, according to the November notice, the program offers \u201cconsiderable cost savings\u201d compared to detention.\nSo even if Trump follows through on his promise of mass detention, it\u2019s likely that ISAP would be a significant aspect of any mass deportation program.",
                 "keywords": [
-                    "health",
-                    "phenylephrine",
-                    "technology",
-                    "yanking",
-                    "work",
-                    "beach",
-                    "medicines",
-                    "center",
-                    "palm",
-                    "florida",
-                    "shelves",
-                    "options",
-                    "cold",
-                    "pharmacies",
-                    "oral",
-                    "breast"
-                ],
-                "authors": [
-                    "Cindy Krischer Goodman"
-                ],
-                "top_image": "https://www.sun-sentinel.com/wp-content/uploads/2023/09/Cold_Medicine_48137.jpg?w=1024&h=666",
-                "movies": [],
-                "text_preview": "Feeling stuffy and ready to reach for NyQuil, Benadryl, or Sudafed PE?\n\nNot so fast.\n\nThe Food and Drug Administration (FDA) has proposed ending the use of oral phenylephrine, a common ingredient found in many cold and allergy medicines \u2014 and some pharmacies already are yanking the popular products off shelves.\n\nFlorida researchers have been studying the effectiveness of oral phenylephrine for two decades. As far back as 2005, researchers at the University of Florida College of Pharmacy had suspected that this ingredient doesn\u2019t relieve nasal congestion, even though it has been widely used for that purpose. The researchers evaluated multiple studies done on oral phenylephrine and combined them into a meta-analysis. They concluded that medications with the ingredient work no better than placebo pills in patients with cold and allergy congestion.\n\n\u201cFor 20 years, we have been telling everyone who will listen that oral phenylephrine doesn\u2019t work,\u201d said Dr. Randy Hatton, a University of Flo...",
-                "short_summary": "The Food and Drug Administration (FDA) has proposed ending the use of oral phenylephrine, a common ingredient found in many cold and allergy medicines \u2014 and some pharmacies already are yanking the popular products off shelves.\nThe researchers evaluated multiple studies done on oral phenylephrine and combined them into a meta-analysis.\nThe FDA is allowing the public to comment for the next six months before it decides whether to pull medications with oral phenylephrine from shelves.\nA new Women\u2019s Imaging CenterThe Palm Beach Health Network has debuted a Palm Court Women\u2019s Imaging Center in Delray Beach.\nOthers in the Palm Beach Health Network include Good Samaritan Medical Center in West Palm Beach, Imaging Center at Palm Beach Gardens, Imaging Center at Royal Palm Beach, and Comprehensive Breast Center at Good Samaritan Medical Center.."
-            },
-            {
-                "title": "Umami Gravy: The Best Gluten-Free Gravy for Any Meal",
-                "description": "This Umami Gravy is the ultimate gluten-free gravy\u2014rich, savory, and so versatile! Whether you\u2019re drizzling it over turkey, mashed potatoes,\u2026\nThe post Umami Gravy: The Best Gluten-Free Gravy for Any Meal appeared first on Nom Nom Paleo\u00ae.",
-                "url": "https://nomnompaleo.com/post/67667225937/umami-gravy",
-                "source": "Nomnompaleo.com",
-                "published_at": "2024-11-17T02:15:39Z",
-                "api_content": "This Umami Gravy is the ultimate gluten-free gravy\u2014rich, savory, and so versatile! Whether you\u2019re drizzling it over turkey, mashed potatoes, or roasted veggies, this recipe has you covered.\r\nThis isn\u2026 [+6665 chars]",
-                "summary": "This Umami Gravy is the ultimate gluten-free gravy\u2014rich, savory, and so versatile!\nUmami Gravy keeps beautifully in the fridge for several days and freezes like a dream.\nIngredients Dried porcini mushrooms : These dried mushrooms add a super flavorful and earthy depth to the gravy.\nDon\u2019t worry\u2014the smidge of fish sauce doesn\u2019t make your gravy fishy; it just amps up the umami.\nHow to store umami gravy You can store umami gravy in an airtight container in the fridge for up to 4 days or freeze it for up to 4 months.",
-                "keywords": [
-                    "meal",
-                    "umami",
-                    "mushrooms",
-                    "dried",
-                    "onions",
-                    "add",
-                    "recipe",
-                    "sauce",
-                    "best",
-                    "glutenfree",
-                    "fish",
-                    "taste",
-                    "gravy"
-                ],
-                "authors": [
-                    "Michelle Tam",
-                    "About Michelle Tam"
-                ],
-                "top_image": "https://nomnompaleo.com/wp-content/uploads/2024/11/1200-Umami-Gravy-aaDSC_4505.jpg",
-                "movies": [],
-                "text_preview": "This Umami Gravy is the ultimate gluten-free gravy\u2014rich, savory, and so versatile! Whether you\u2019re drizzling it over turkey, mashed potatoes, or roasted veggies, this recipe has you covered.\n\nWhat makes this the best gluten free gravy? This isn\u2019t just any gluten-free gravy\u2014it\u2019s the most flavor-packed, umami-loaded gravy you\u2019ll ever taste! The secret? Umami synergy. We\u2019re talking two kinds of mushrooms (fresh and dried), a splash of fish sauce, and a dollop of tomato paste\u2014all working together to create a rich, savory punch that\u2019ll make anything you drizzle it on taste amazing. And here\u2019s the best part: there\u2019s no need for flour, starch, or any other thickeners to get that perfect gravy consistency. Instead, you simply blend the cooked mushrooms and onions into a silky, luscious sauce. It\u2019s thick, velvety, and totally fuss-free! Trust me, this is the gluten-free gravy that\u2019ll steal the show at your next meal. Yep, this is a rich, thick gravy that you can pour on EVERYTHING.\n\nUmami synerg...",
-                "short_summary": "This Umami Gravy is the ultimate gluten-free gravy\u2014rich, savory, and so versatile!\nUmami Gravy keeps beautifully in the fridge for several days and freezes like a dream.\nIngredients Dried porcini mushrooms : These dried mushrooms add a super flavorful and earthy depth to the gravy.\nDon\u2019t worry\u2014the smidge of fish sauce doesn\u2019t make your gravy fishy; it just amps up the umami.\nHow to store umami gravy You can store umami gravy in an airtight container in the fridge for up to 4 days or freeze it for up to 4 months.."
-            },
-            {
-                "title": "Robinhood Stock Has Soared 315% From Its 52-Week Low. Is It Too Late to Buy?",
-                "description": "Robinhood Markets (NASDAQ: HOOD) went public in 2021 at $38 per share and quickly rocketed to an all-time high of $85. Investors rewarded the company's ability to attract young, first-time investors who wanted to trade financial assets like stocks and options\u2026",
-                "url": "https://biztoc.com/x/156a13bc67c2fde2",
-                "source": "Biztoc.com",
-                "published_at": "2024-11-17T00:50:17Z",
-                "api_content": "Robinhood Markets (NASDAQ: HOOD) went public in 2021 at $38 per share and quickly rocketed to an all-time high of $85. Investors rewarded the company's ability to attract young, first-time investors \u2026 [+137 chars]",
-                "summary": "Robinhood Markets (NASDAQ: HOOD) went public in 2021 at $38 per share and quickly rocketed to an all-time high of $85.\nInvestors rewarded the company's ability to attract young, first-time investors who wanted to trade financial assets like stocks and options contracts to its\u2026This story appeared on aol.com , 2024-11-17 00:50:17.460000.",
-                "keywords": [
-                    "rewarded",
-                    "low",
-                    "stock",
-                    "buy",
-                    "investors",
-                    "late",
-                    "soared",
-                    "trade",
-                    "young",
-                    "rocketed",
-                    "went",
-                    "315",
-                    "share",
-                    "robinhood",
-                    "wanted",
-                    "stocks",
-                    "52week"
-                ],
-                "authors": [],
-                "top_image": "https://biztoc.com/cdn/156a13bc67c2fde2_s.webp",
-                "movies": [],
-                "text_preview": "Robinhood Markets (NASDAQ: HOOD) went public in 2021 at $38 per share and quickly rocketed to an all-time high of $85. Investors rewarded the company's ability to attract young, first-time investors who wanted to trade financial assets like stocks and options contracts to its\u2026\n\nThis story appeared on aol.com , 2024-11-17 00:50:17.460000."
-            },
-            {
-                "title": "1 Unstoppable Warren Buffett Stock to Buy and Hold Forever",
-                "description": "Warren Buffett is considered one of the greatest investors of all time. So when he talks, Wall Street listens.\nOne point he has consistently hammered home throughout his illustrious career is the importance of buying shares of companies, intending to hold on \u2026",
-                "url": "https://biztoc.com/x/6fada21a2162f823",
-                "source": "Biztoc.com",
-                "published_at": "2024-11-17T00:50:10Z",
-                "api_content": "Warren Buffett is considered one of the greatest investors of all time. So when he talks, Wall Street listens.One point he has consistently hammered home throughout his illustrious career is the impo\u2026 [+143 chars]",
-                "summary": "Warren Buffett is considered one of the greatest investors of all time.\nSo when he talks, Wall Street listens.\nOne point he has consistently hammered home throughout his illustrious career is the importance of buying shares of companies, intending to hold on to them for a long time,\u2026This story appeared on aol.com , 2024-11-17 00:50:10.548000.",
-                "keywords": [
-                    "shares",
-                    "street",
-                    "stock",
-                    "long",
-                    "talks",
-                    "buy",
-                    "investors",
-                    "timethis",
-                    "wall",
-                    "hold",
-                    "point",
-                    "warren",
-                    "buffett",
-                    "listensone",
-                    "forever",
-                    "unstoppable"
-                ],
-                "authors": [],
-                "top_image": "https://biztoc.com/cdn/6fada21a2162f823_s.webp",
-                "movies": [],
-                "text_preview": "Warren Buffett is considered one of the greatest investors of all time. So when he talks, Wall Street listens.\n\nOne point he has consistently hammered home throughout his illustrious career is the importance of buying shares of companies, intending to hold on to them for a long time,\u2026\n\nThis story appeared on aol.com , 2024-11-17 00:50:10.548000."
-            },
-            {
-                "title": "Major Investor In Trump Media Offloads Most Of Its Stake In DJT Stock",
-                "description": "ARC Global Investments, a major investor in Trump Media & Technology Group DJT, has drastically reduced its stake in the company.\nWhat Happened: According to a regulatory filing on Friday, ARC Global and its manager, Patrick Orlando, now hold a mere 0.01% sta\u2026",
-                "url": "https://biztoc.com/x/3721708e08c5c05f",
-                "source": "Biztoc.com",
-                "published_at": "2024-11-17T00:41:28Z",
-                "api_content": "ARC Global Investments, a major investor in Trump Media &amp; Technology Group DJT, has drastically reduced its stake in the company.What Happened: According to a regulatory filing on Friday, ARC Glo\u2026 [+157 chars]",
-                "summary": "ARC Global Investments, a major investor in Trump Media & Technology Group DJT, has drastically reduced its stake in the company.\nWhat Happened: According to a regulatory filing on Friday, ARC Global and its manager, Patrick Orlando, now hold a mere 0.01% stake in Trump Media, the parent\u2026This story appeared on benzinga.com , 2024-11-17 00:41:28.151000.",
-                "keywords": [
-                    "stake",
-                    "djt",
-                    "technology",
-                    "regulatory",
-                    "parentthis",
-                    "stock",
+                    "started",
+                    "arsenal",
+                    "surveillance",
                     "trump",
-                    "global",
-                    "arc",
-                    "patrick",
-                    "investor",
-                    "offloads",
-                    "reduced",
-                    "media",
-                    "major"
+                    "notice",
+                    "ramping",
+                    "mass",
+                    "won",
+                    "deportation",
+                    "companies",
+                    "detention",
+                    "ice",
+                    "isap",
+                    "donald",
+                    "immediately",
+                    "program"
                 ],
-                "authors": [],
-                "top_image": "https://biztoc.com/cdn/3721708e08c5c05f_s.webp",
+                "authors": [
+                    "Caroline Haskins",
+                    "Lily Hay Newman",
+                    "Dell Cameron",
+                    "Tess Owen",
+                    "Eric Geller",
+                    "David Gilbert",
+                    "Vas Panagiotopoulos",
+                    "Jake Lahut",
+                    "Andy Greenberg",
+                    "Tim Marchman"
+                ],
+                "top_image": "https://media.wired.com/photos/6733a1802d34679fa5571df1/191:100/w_1280,c_limit/Security_ICE_GettyImages.jpg",
                 "movies": [],
-                "text_preview": "ARC Global Investments, a major investor in Trump Media & Technology Group DJT, has drastically reduced its stake in the company.\n\nWhat Happened: According to a regulatory filing on Friday, ARC Global and its manager, Patrick Orlando, now hold a mere 0.01% stake in Trump Media, the parent\u2026\n\nThis story appeared on benzinga.com , 2024-11-17 00:41:28.151000."
+                "text_preview": "On November 6, just hours after news outlets declared that Donald Trump had been elected the next president of the United States, Immigration and Customs Enforcement posted a notice asking companies to submit plans for how they would expand ICE\u2019s system of ankle monitors, GPS trackers, biometric check-in technology, and human agents monitoring \u201cnon-citizens\u201d awaiting immigration court hearings or deportation.\n\nThe notice signals the mechanisms through which ICE will expand its intensive surveillance of people awaiting deportation hearings\u2014a list that could grow from under 200,000 to more than 5 million.\n\nThroughout Trump\u2019s presidential campaign, he has promised to execute \u201cthe largest deportation operation in American history.\u201d Beyond promising workplace raids and giant detention \u201ccamps,\u201d Trump hasn\u2019t released specific plans for how his mass deportations would work. However, it\u2019s likely that many granular aspects of a mass monitoring, detention, and deportation program would be planned...",
+                "short_summary": "The notice signals the mechanisms through which ICE will expand its intensive surveillance of people awaiting deportation hearings\u2014a list that could grow from under 200,000 to more than 5 million.\nHowever, it\u2019s likely that many granular aspects of a mass monitoring, detention, and deportation program would be planned by private companies contracting with ICE.\nThe notice says companies must have facilities with \u201csuitably large intake rooms\u201d for people being enrolled in ICE surveillance.\nFor ICE, according to the November notice, the program offers \u201cconsiderable cost savings\u201d compared to detention.\nSo even if Trump follows through on his promise of mass detention, it\u2019s likely that ISAP would be a significant aspect of any mass deportation program.."
+            },
+            {
+                "title": "We Break Down the Internet\u2019s Future Under Trump 2.0",
+                "description": "WIRED global editorial director Katie Drummond joins this week to discuss what the fragmented internet did for the Trump campaign, and what the incoming Trump administration means for the internet.",
+                "url": "https://www.wired.com/story/the-internets-future-under-donald-trump/",
+                "source": "Wired",
+                "published_at": "2024-11-14T18:58:19Z",
+                "api_content": "Leah Feiger: Enough trillions that don't actually currently exist in that budget.\r\nKatie Drummond: Exactly. So thinking about that very messy, very human business and Elon Musk and Donald Trump in a \u2026 [+5020 chars]",
+                "summary": "If the goal was to get Trump elected and get himself into a seat of power, then who cares about that money that he lost?\nI mean, it's essentially deficit funding what has become and is increasingly a right wing, conservative echo chamber that serves as a megaphone for the Trump administration and his acolytes, then job well done.\nAnd even if it's not because of an incoming Trump administration, it's just good practice.\nAnd I think for people and for institutions, I think it's also an interesting moment to think about what your lines are.\nReally thinking about, OK, we need to spend some time with our lawyers and talk about the worst-case scenario.",
+                "keywords": [
+                    "feiger",
+                    "trump",
+                    "moment",
+                    "future",
+                    "really",
+                    "know",
+                    "drummond",
+                    "administration",
+                    "20",
+                    "thinking",
+                    "internets",
+                    "youre",
+                    "break",
+                    "think"
+                ],
+                "authors": [
+                    "Leah Feiger",
+                    "Makena Kelly",
+                    "Lauren Goode",
+                    "David Gilbert"
+                ],
+                "top_image": "https://media.wired.com/photos/67328cfe8b3c4eb2afd88938/191:100/w_1280,c_limit/Politics-Lab-Umbrella-of-Election-Politics-2182522891.jpg",
+                "movies": [],
+                "text_preview": "Leah Feiger: Enough trillions that don't actually currently exist in that budget.\n\nKatie Drummond: Exactly. So thinking about that very messy, very human business and Elon Musk and Donald Trump in a room making decisions about it, where you're really not seeing a lot of empathy, you're not seeing a lot of nuanced thinking about people and what people need. That is very stressful.\n\nLeah Feiger: Absolutely. And on the X point, a slight devil's advocate there is that it depends on what the goal was. If the goal was to actually keep X as this profitable business communications for the world, et cetera, then yeah, absolutely, he failed. If the goal was to get Trump elected and get himself into a seat of power, then who cares about that money that he lost?\n\nKatie Drummond: Great point.\n\nLeah Feiger: He won that back tenfold over the last week with Tesla's stock and probably some upcoming government contracts and lack of regulations. Which I guess is into the, are you subsidizing your communi...",
+                "short_summary": "If the goal was to get Trump elected and get himself into a seat of power, then who cares about that money that he lost?\nI mean, it's essentially deficit funding what has become and is increasingly a right wing, conservative echo chamber that serves as a megaphone for the Trump administration and his acolytes, then job well done.\nAnd even if it's not because of an incoming Trump administration, it's just good practice.\nAnd I think for people and for institutions, I think it's also an interesting moment to think about what your lines are.\nReally thinking about, OK, we need to spend some time with our lawyers and talk about the worst-case scenario.."
+            },
+            {
+                "title": "After the Election, California (Yes, That Hellscape) Will Keep Moving the World Forward No Matter What",
+                "description": "The state has been written off as a woke wasteland. But it's still inventing the future on a bunch of frontiers nobody's talking about. Even if Trump wins, it will remain a golden, global example.",
+                "url": "https://www.wired.com/story/california-will-keep-moving-the-world-forward/",
+                "source": "Wired",
+                "published_at": "2024-10-31T10:00:00Z",
+                "api_content": "Just take the area of gasoline-powered transportation. After World War II, when American car culture was famously getting minted in Southern California, the state used a gas tax hike to build out one\u2026 [+5644 chars]",
+                "summary": "If she wins, what she knows from California will presumably affect her approach to the country and the world.\nBut if she doesn\u2019t get that far, California is likely to chug along with all the more purpose, maintaining its nation-scale example of how else things can be done.\nWhen done, this will be among the very fastest mainline high-speed rail systems running anywhere on Earth\u2014at 220 mph.\nBut I\u2019ve been following the back-and-forth for more than a decade, and I\u2019ve started to see California\u2019s high-speed rail project with a new clarity.\nThat\u2019s where California is with high-speed rail.",
+                "keywords": [
+                    "hellscape",
+                    "valley",
+                    "california",
+                    "highspeed",
+                    "trump",
+                    "state",
+                    "running",
+                    "world",
+                    "line",
+                    "forward",
+                    "rail",
+                    "yes",
+                    "central",
+                    "moving",
+                    "far",
+                    "project"
+                ],
+                "authors": [
+                    "James Fallows",
+                    "Kelly Mcevers",
+                    "Steven Levy",
+                    "David Gilbert",
+                    "Lauren Goode",
+                    "Emily Mullin",
+                    "Stephen Robert Miller",
+                    "Leah Feiger",
+                    "Michael Calore",
+                    "Makena Kelly"
+                ],
+                "top_image": "https://media.wired.com/photos/67210b73fdc82da59d1ddbb8/191:100/w_1280,c_limit/CAF_Lindsey_Price_FINAL.jpg",
+                "movies": [],
+                "text_preview": "It would be one thing if this were just a history lesson. But the same kind of dynamic is playing out right now in a few crucial arenas that virtually no one beyond California is talking about. And I\u2019m happy to report that the America taking shape on its Pacific coast is again inventing solutions far more rapidly than conventional wisdom has accounted for.\n\nI was bullish on these emerging transformations even before Kamala Harris became the Democratic nominee for president. If she wins, what she knows from California will presumably affect her approach to the country and the world. Her California-ness is one of the least-discussed but most important aspects of her, including the upbeat approach to today\u2019s diversity and tomorrow\u2019s opportunities that is such a contrast to Donald Trump.\n\nBut if she doesn\u2019t get that far, California is likely to chug along with all the more purpose, maintaining its nation-scale example of how else things can be done. Whoever guides national politics, Califo...",
+                "short_summary": "If she wins, what she knows from California will presumably affect her approach to the country and the world.\nBut if she doesn\u2019t get that far, California is likely to chug along with all the more purpose, maintaining its nation-scale example of how else things can be done.\nWhen done, this will be among the very fastest mainline high-speed rail systems running anywhere on Earth\u2014at 220 mph.\nBut I\u2019ve been following the back-and-forth for more than a decade, and I\u2019ve started to see California\u2019s high-speed rail project with a new clarity.\nThat\u2019s where California is with high-speed rail.."
+            },
+            {
+                "title": "20 Best Early Black Friday Deals of 2024 to Shop Right Now",
+                "description": "It doesn\u2019t officially arrive until November 29, but the Black Friday deals have already begun. Shop steep discounts on gear tested and approved by our editors.",
+                "url": "https://www.wired.com/story/early-black-friday-deals-2024/",
+                "source": "Wired",
+                "published_at": "2024-11-13T16:01:00Z",
+                "api_content": "Black Friday is well-known as the day when retailers slash prices to kick off the holiday shopping season and clear out stock ahead of the new year. The rise of online shopping expanded the season to\u2026 [+10606 chars]",
+                "summary": "The WIRED team boasts decades of experience in product testing and a nose for sniffing out the best deals using a suite of price-tracking tools.\nFor Black Friday, we cross-reference our buying guide recommendations with the latest sale prices to find the best early Black Friday deals on gadgets and gizmos worth owning.\nThe latest Apple Watch Series 10 (8/10, WIRED Recommends) is the best Apple Watch you can buy.\nPhotograph: Ryan WaniataSamsung's second-tier OLED (9/10, WIRED Recommends) is one of WIRED reviewer Ryan Waniata\u2019s favorite TVs of the year.\nThe tri-band Eero Pro 6E (7/10, WIRED Recommends) mesh adds the 6-GHz band to the familiar 2.4-GHz and 5-GHz bands.",
+                "keywords": [
+                    "watch",
+                    "25",
+                    "sale",
+                    "shop",
+                    "month",
+                    "early",
+                    "best",
+                    "2024",
+                    "black",
+                    "easy",
+                    "right",
+                    "deals",
+                    "wired",
+                    "recommends",
+                    "apple"
+                ],
+                "authors": [
+                    "Simon Hill",
+                    "Louryn Strampe",
+                    "Nena Farrell",
+                    "Julian Chokkattu",
+                    "Ryan Waniata",
+                    "Scott Gilbertson",
+                    "Brenda Stolyar",
+                    "Molly Higgins"
+                ],
+                "top_image": "https://media.wired.com/photos/6733e0b69870c92e316a2a79/191:100/w_1280,c_limit/03-early-black-friday-deals.png",
+                "movies": [],
+                "text_preview": "Black Friday is the big day for retailers slashing prices to kick off the holiday shopping season and clear out their 2024 stock. But you don\u2019t have to wait to carve the Thanksgiving turkey and watch the Cowboys lose to snag discounts, because the best early Black Friday deals are live already.\n\nThe WIRED team boasts decades of experience in product testing and a nose for sniffing out the best deals using a suite of price-tracking tools. For Black Friday, we cross-reference our buying guide recommendations with the latest sale prices to find the best early Black Friday deals on gadgets and gizmos worth owning. Someone from the WIRED Reviews team has tested every product we include in our deals coverage, so you can rest easy knowing we don't highlight low prices on low-quality goods.\n\nWe strive to find deals at their best price ever, or very close to it (some match previous discounts, but we have never seen them lower unless stated).\n\nUpdated November 19, 2024: We added deals on devices...",
+                "short_summary": "The WIRED team boasts decades of experience in product testing and a nose for sniffing out the best deals using a suite of price-tracking tools.\nFor Black Friday, we cross-reference our buying guide recommendations with the latest sale prices to find the best early Black Friday deals on gadgets and gizmos worth owning.\nThe latest Apple Watch Series 10 (8/10, WIRED Recommends) is the best Apple Watch you can buy.\nPhotograph: Ryan WaniataSamsung's second-tier OLED (9/10, WIRED Recommends) is one of WIRED reviewer Ryan Waniata\u2019s favorite TVs of the year.\nThe tri-band Eero Pro 6E (7/10, WIRED Recommends) mesh adds the 6-GHz band to the familiar 2.4-GHz and 5-GHz bands.."
+            },
+            {
+                "title": "Lomography\u2019s new instant camera uses a glass lens for sharper photos",
+                "description": "Lomography\u2019s new Lomo\u2019Instant Wide Glass camera features an upgraded 90mm glass lens for potentially sharper results while using Fujifilm Instax Wide stock.",
+                "url": "https://www.theverge.com/2024/10/23/24277617/lomography-lomo-instant-wide-glass-camera-photography-fujifilm-instax-wide",
+                "source": "The Verge",
+                "published_at": "2024-10-23T16:26:18Z",
+                "api_content": "Lomographys new instant camera uses a glass lens for sharper photos\r\nLomographys new instant camera uses a glass lens for sharper photos\r\n / The new LomoInstant Wide Glass features a 90mm multi-coate\u2026 [+2709 chars]",
+                "summary": "Lomography has announced an upgraded version of its Lomo\u2019Instant Wide Camera that swaps the original\u2019s 90mm plastic lens for one made with multi-coated glass.\nThe Lomo\u2019Instant Wide Glass is available now for $279, where as the all-plastic Lomo\u2019Instant Wide Camera Black Edition is still $169.\nThe Lomo\u2019Instant Wide Glass includes a lens cap that doubles as a wireless shutter remote.\nA sample photo taken with the Lomo\u2019Instant Wide Glass camera.\nImage: LomographyThe Lomo\u2019Instant Wide Glass\u2019 lens offers four focus zones including an infinity position for landscape photography and a close-up option that can focus on subjects just 0.98-feet away.",
+                "keywords": [
+                    "lomographys",
+                    "uses",
+                    "mode",
+                    "sharper",
+                    "lomoinstant",
+                    "photos",
+                    "wide",
+                    "instant",
+                    "glass",
+                    "camera",
+                    "focus",
+                    "shutter",
+                    "lomography",
+                    "lens"
+                ],
+                "authors": [
+                    "Andrew Liszewski"
+                ],
+                "top_image": "https://cdn.vox-cdn.com/thumbor/EisYw-nrs1oIcgBPg8hRI_jo9x8=/0x0:1600x1066/1200x628/filters:focal(800x533:801x534)/cdn.vox-cdn.com/uploads/chorus_asset/file/25694796/lomo1.jpg",
+                "movies": [],
+                "text_preview": "Lomography has announced an upgraded version of its Lomo\u2019Instant Wide Camera that swaps the original\u2019s 90mm plastic lens for one made with multi-coated glass. The company says its new Lomo\u2019Instant Wide Glass is the \u201csharpest instant camera on earth,\u201d but while it probably outperforms other Lomography offerings, it\u2019s up against instant alternatives like the Nons SL660 which is compatible with EF mount lenses. And in either case, it\u2019s still going to be held back by the limitations of instant film.\n\nThose upgraded optics come with a much steeper price tag. The Lomo\u2019Instant Wide Glass is available now for $279, where as the all-plastic Lomo\u2019Instant Wide Camera Black Edition is still $169. Fujifilm\u2019s own Instax Wide 400 is even cheaper at $149.95, while Fujifilm\u2019s Instax Wide film stock, which is what this new camera uses, is $18.99 for 20 exposures.\n\nThe Lomo\u2019Instant Wide Glass includes a lens cap that doubles as a wireless shutter remote. Image: Lomography\n\nDue to the wide film stock it u...",
+                "short_summary": "Lomography has announced an upgraded version of its Lomo\u2019Instant Wide Camera that swaps the original\u2019s 90mm plastic lens for one made with multi-coated glass.\nThe Lomo\u2019Instant Wide Glass is available now for $279, where as the all-plastic Lomo\u2019Instant Wide Camera Black Edition is still $169.\nThe Lomo\u2019Instant Wide Glass includes a lens cap that doubles as a wireless shutter remote.\nA sample photo taken with the Lomo\u2019Instant Wide Glass camera.\nImage: LomographyThe Lomo\u2019Instant Wide Glass\u2019 lens offers four focus zones including an infinity position for landscape photography and a close-up option that can focus on subjects just 0.98-feet away.."
             }
         ]
     }

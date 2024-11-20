@@ -1,5 +1,6 @@
 import json
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from data.update_data import refresh_data
 import plotly.graph_objects as go
@@ -9,7 +10,7 @@ import numpy as np
 
 CRYPTO_FILE = Path("data/crypto_data.json")
 STOCK_FILE = Path("data/stock_data.json")
-
+timezone = ZoneInfo("America/New_York")
 
 def get_last_updated_time(file_name):
     try:
@@ -25,8 +26,9 @@ def is_data_stale(timestamp_str):
     """
     Check if the given timestamp is older than 24 hours.
     """
-    timestamp = datetime.strptime(timestamp_str, "%Y-%m-%d %H:%M:%S")
-    return datetime.now() - timestamp > timedelta(hours=24)
+    cleaned_date_str = "".join(ch for ch in timestamp_str if not ch.isalpha())
+    timestamp = datetime.strptime(cleaned_date_str, "%Y-%m-%d %H:%M:%S %z")
+    return datetime.now(timezone) - timestamp > timedelta(hours=24)
 
 def load_data(file_path):
     """

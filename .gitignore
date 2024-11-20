@@ -3,3 +3,5 @@ test.py
 *.ipynb
 .ipynb_checkpoints
 .streamlit
+*.docx
+*.pdf

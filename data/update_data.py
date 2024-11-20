@@ -1,16 +1,19 @@
 import requests
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 import schedule
 import time
 import yfinance as yf
 import numpy as np
-from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 from newspaper import Article, Config
 import nltk
 from typing import List, Dict
 
 import streamlit as st
+
+
+timezone = ZoneInfo("America/New_York")
 
 # Load API key and URLs from JSON config
 with open("data/config.json", "r") as config_file:
@@ -200,7 +203,7 @@ def fetch_and_enrich_news(keywords: List[str]) -> List[Dict]:
         query = " OR ".join(keywords)
         
         # Get news from the last 24 hours
-        yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+        yesterday = (datetime.now(timezone) - timedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S %Z%z')
         
         params = {
             'q': query,
@@ -304,8 +307,8 @@ def save_data_to_json(data, file_name):
     # Ensure file_name is a string
     if not isinstance(file_name, str):
         raise TypeError(f"file_name should be a string, got {type(file_name)}")
-
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
+    timestamp = datetime.now(timezone).strftime("%Y-%m-%d %H:%M:%S %Z%z")
     data_with_time = {"timestamp": timestamp, "data": data}
     file_path="data/"+file_name+".json"
     # Ensure the directory exists before trying to save the file
