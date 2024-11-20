@@ -8,6 +8,7 @@ def get_stock_price(ticker):
 
 def get_indian_stock_price(ticker, exchange='NS'):
     """
+
     Gets the latest Indian stock price given the ticker symbol and exchange.
 
     Args:
