@@ -6,6 +6,47 @@ def get_stock_price(ticker):
     return str(yf.Ticker(ticker).history(period='1y')['Close'].iloc[-1])
 
 
+def get_indian_stock_price(ticker, exchange='NS'):
+    """
+    Gets the latest Indian stock price given the ticker symbol and exchange.
+
+    Args:
+        ticker (str): The stock ticker symbol (e.g., 'RELIANCE' for Reliance Industries)
+        exchange (str): Exchange code - 'NS' for NSE or 'BO' for BSE
+    """
+    modified_ticker = f"{ticker}.{exchange}"
+    return str(yf.Ticker(modified_ticker).history(period='1y')['Close'].iloc[-1])
+
+
+def plot_indian_stock_price(ticker, exchange='NS', window=None, period='1y'):
+    """
+    Plots the Indian stock price over specified period.
+
+    Args:
+        ticker (str): The stock ticker symbol (e.g., 'RELIANCE' for Reliance Industries)
+        exchange (str): Exchange code - 'NS' for NSE or 'BO' for BSE
+        window (int): Optional window size for moving average
+        period (str): Time period for data
+    """
+    modified_ticker = f"{ticker}.{exchange}"
+    data = yf.Ticker(modified_ticker).history(period=period)
+    close_prices = data['Close']
+
+    plt.figure(figsize=(10, 5))
+    plt.plot(close_prices.index, close_prices, label=f'{ticker} Stock Price')
+
+    if window:
+        ma = close_prices.rolling(window=window, min_periods=1).mean()
+        plt.plot(ma.index, ma, label=f'MA ({window} days)', linestyle='--')
+
+    plt.title(f'{ticker} Stock Price Over {period}')
+    plt.xlabel('Date')
+    plt.ylabel('Stock Price (₹)')
+    plt.grid(True)
+    plt.legend()
+    return plt
+
+
 def plot_SMA(ticker, window=20, period='1y'):
     # Get stock data
     data = yf.Ticker(ticker).history(period=period)
@@ -106,7 +147,7 @@ def plot_crypto_price_graph(crypto_symbol, window=None, period='1y'):
     return plt
 
 
-# Update the functions list to include the new plotting functions
+# Update the functions list to include the new Indian stock functions
 functions = [
     {
         'name': 'get_stock_price',
@@ -117,6 +158,48 @@ functions = [
                 'ticker': {
                     'type': 'string',
                     'description': 'The stock ticker symbol for a company (e.g., MSFT for Microsoft).'
+                }
+            },
+            'required': ['ticker']
+        }
+    },
+    {
+        'name': 'get_indian_stock_price',
+        'description': 'Gets the latest Indian stock price given the ticker symbol and exchange.',
+        'parameters': {
+            'type': 'object',
+            'properties': {
+                'ticker': {
+                    'type': 'string',
+                    'description': 'The stock ticker symbol (e.g., RELIANCE for Reliance Industries).'
+                },
+                'exchange': {
+                    'type': 'string',
+                    'description': 'The exchange code - NS for NSE or BO for BSE.',
+                    'default': 'NS'
+                }
+            },
+            'required': ['ticker']
+        }
+    },
+    {
+        'name': 'plot_indian_stock_price',
+        'description': 'Plots the Indian stock price over specified period.',
+        'parameters': {
+            'type': 'object',
+            'properties': {
+                'ticker': {
+                    'type': 'string',
+                    'description': 'The stock ticker symbol (e.g., RELIANCE for Reliance Industries).'
+                },
+                'exchange': {
+                    'type': 'string',
+                    'description': 'The exchange code - NS for NSE or BO for BSE.',
+                    'default': 'NS'
+                },
+                'window': {
+                    'type': 'integer',
+                    'description': 'Optional window size for moving average.'
                 }
             },
             'required': ['ticker']
@@ -219,6 +302,8 @@ functions = [
 # Update the available functions dictionary
 available_functions = {
     'get_stock_price': get_stock_price,
+    'get_indian_stock_price': get_indian_stock_price,
+    'plot_indian_stock_price': plot_indian_stock_price,
     'plot_SMA': plot_SMA,
     'plot_EMA': plot_EMA,
     'calculate_RSI': calculate_RSI,
