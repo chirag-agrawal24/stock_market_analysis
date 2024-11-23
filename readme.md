@@ -79,9 +79,6 @@ Follow these steps to set up and run the **Financial Market Analysis Tool**:
 
 ---
 
-Sure! Here's the **Contributors** section in one line:
-
----
 
 ## Contributors  
 
