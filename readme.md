@@ -85,11 +85,11 @@ Sure! Here's the **Contributors** section in one line:
 
 ## Contributors  
 
-- **Yash Pinjarkar**: Project Lead & Chatbot Development &nbsp;&nbsp;&nbsp;&nbsp;
+- **Yash Pinjarkar**: Project Lead & Chatbot Development &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               | &nbsp;&nbsp; [LinkedIn Profile](https://www.linkedin.com/in/yash-pinjarkar/) &nbsp;&nbsp;|&nbsp;&nbsp; [GitHub Profile](https://github.com/yashpinjarkar10)  
 - **Chirag Agrawal**: News Summarization, Frontend, Deployment &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
 | &nbsp;&nbsp; [LinkedIn Profile](https://www.linkedin.com/in/-chirag-agrawal-/) &nbsp;&nbsp;|&nbsp;&nbsp; [GitHub Profile](https://github.com/chirag-agrawal24)  
-- **Deepanshu Kesharwani**:  Data Fetching & Analysis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- **Deepanshu Kesharwani**:  Data Fetching & Analysis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   | &nbsp;&nbsp; [LinkedIn Profile](https://www.linkedin.com/in/deepanshu-kesharwani-0028b1191/) &nbsp;&nbsp;|&nbsp;&nbsp; [GitHub Profile](https://github.com/Dkesharwan)  
 
 
