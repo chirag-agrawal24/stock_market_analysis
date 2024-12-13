@@ -93,7 +93,7 @@ Follow these steps to set up and run the **Financial Market Analysis Tool**:
 
 ---
 
-We’re excited to have you contribute! To get started, fork the repository and submit a pull request.  
+We’re excited to have you contribute! To get started, fork repository and submit a pull request.  
 Feel free to make changes or suggest enhancements to improve the tool. 🚀 
 
  
