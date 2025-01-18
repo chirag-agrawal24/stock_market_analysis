@@ -87,7 +87,7 @@ Follow these steps to set up and run the **Financial Market Analysis Tool**:
 - **Chirag Agrawal**: News Summarization, Frontend, Deployment &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
 | &nbsp;&nbsp; [LinkedIn Profile](https://www.linkedin.com/in/-chirag-agrawal-/) &nbsp;&nbsp;|&nbsp;&nbsp; [GitHub Profile](https://github.com/chirag-agrawal24)  
 - **Deepanshu Kesharwani**:  Data Fetching & Analysis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  | &nbsp;&nbsp; [LinkedIn Profile](https://www.linkedin.com/in/deepanshu-kesharwani-0028b1191/) &nbsp;&nbsp;|&nbsp;&nbsp; [GitHub Profile](https://github.com/Dkesharwan)  
+  | &nbsp;&nbsp; [LinkedIn Profile](https://www.linkedin.com/in/deepanshu-kesharwani-0028b1191/) &nbsp;&nbsp;|&nbsp;&nbsp; [GitHub Profile](https://github.com/Deepanshu-kesharwani)  
 
 
 
