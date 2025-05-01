@@ -139,7 +139,10 @@ def create_speedometer(value, title, max_value):
     """
     Creates a Plotly speedometer gauge chart.
     """
-
+    try:
+        value = float(value)
+    except Exception as e:
+        value = 0
 
     fig = go.Figure(go.Indicator(
         mode="gauge+number",
@@ -180,7 +183,10 @@ def create_fear_greed_index(value, title="Greed Index", max_value=100):
     """
     Creates a Plotly speedometer gauge chart with mood text inside the meter.
     """
-    value = int(value)
+    try:
+        value = float(value)
+    except Exception as e:
+        value = 0
     mood = "Error"
     color = "#2E86C1"  # default color
     
