@@ -5,7 +5,7 @@ import streamlit as st # for secret api key
 
 # Configure the API key for generative AI
 genai.configure(api_key=st.secrets["general"]["gemini_api_key"])
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-2.0-flash-lite')
 
 
 def process_user_input(user_input):
